@@ -16,8 +16,11 @@ compinit
 # fpath=(/usr/local/share/zsh-completions $fpath)
 
 # git prompt
+source $ZSH/zsh/zsh-git-prompt/zshrc.sh
+GIT_PROMPT_EXECUTABLE="haskell"
+PROMPT='%B%~%b$(git_super_status)
+``%T $ '
 
-#
 source $ZSH/zsh/aliases.zsh
 
 # Print out my todo's
