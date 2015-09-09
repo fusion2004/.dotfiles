@@ -1,0 +1,19 @@
+[user]
+  name = Mark Oleson
+  email = fusion2004@gmail.com
+[alias]
+  st = status
+  co = checkout
+  cm = commit -m
+  aa = add .
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  ui = true
+[push]
+  default = simple
+[filter "lfs"]
+  clean = git-lfs clean %f
+  smudge = git-lfs smudge %f
+  required = true

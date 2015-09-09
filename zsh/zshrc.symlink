@@ -1,0 +1,24 @@
+# shortcut to this dotfiles path is $ZSH
+export ZSH=$HOME/.dotfiles
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+# Add RVM to PATH for scripting
+export PATH="$PATH:$HOME/.rvm/bin"
+
+# Load RVM into a shell session *as a function*
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+# Completions for git and the like
+autoload -Uz compinit
+compinit
+# fpath=(/usr/local/share/zsh-completions $fpath)
+
+# git prompt
+
+#
+source $ZSH/zsh/aliases.zsh
+
+# Print out my todo's
+cat ~/todo

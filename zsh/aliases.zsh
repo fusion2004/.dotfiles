@@ -1,0 +1,21 @@
+alias chr="open -a \"Google Chrome\""
+alias jira="chr https://izeaeng.jira.com/projects/IZEAEX?selectedItem=com.atlassian.jira.jira-projects-plugin:release-page"
+
+alias g="git"
+alias ga="git add ."
+alias gc="git commit -m "
+alias gco="git checkout"
+alias gs="git status"
+alias gp="git pull"
+alias gu="git push"
+
+alias a="atom ."
+alias b="bundle"
+alias f="foreman s web=1,lucre=1,search=1"
+alias fs="foreman s"
+alias r="rake"
+alias mig="rake db:migrate"
+alias l="LSCOLORS=gxfxcxdxbxegedabagacad ls -lahGp"
+alias todo="atom ~/todo"
+
+alias ce="cd ~/Developer/izea-exchange/"
