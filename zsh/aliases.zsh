@@ -1,5 +1,6 @@
 alias chr="open -a \"Google Chrome\""
 alias jira="chr \"https://izeaeng.jira.com/projects/IZEAEX?selectedItem=com.atlassian.jira.jira-projects-plugin:release-page\""
+alias docs="chr \"https://github.com/IZEA/engineering_docs/wiki\""
 
 alias g="git"
 alias ga="git add ."
@@ -23,6 +24,13 @@ alias r="rake"
 alias rc="rails c"
 alias mig="rake db:migrate"
 alias l="LSCOLORS=gxfxcxdxbxegedabagacad ls -lahGp"
+alias nomfix="rm -rf node_modules bower_components && npm install && bower install"
+alias nombom="npm cache clean && bower cache clean && rm -rf node_modules bower_components && npm install && bower install"
+alias nume="npm prune && npm install && bower prune && bower install"
 alias todo="atom ~/todo"
+alias derp="ember deploy production --activate"
+
+alias dup='docker-machine start default && eval "$(docker-machine env default)"'
+alias ddown="docker-machine stop default"
 
 alias ce="cd ~/Developer/izea-exchange/"
