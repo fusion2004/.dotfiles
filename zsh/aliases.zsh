@@ -4,6 +4,7 @@ alias docs="chr \"https://github.com/IZEA/engineering_docs/wiki\""
 
 alias g="git"
 alias ga="git add ."
+alias gap="git add -p"
 alias gb="git branch"
 alias gc="git commit -m "
 alias gcc="git commit"
@@ -24,17 +25,13 @@ alias fw="foreman start -c web=1,lucre=1,search=1,worker=1"
 alias fs="foreman s"
 alias r="rake"
 alias rc="rails c"
-alias mig="rake db:migrate"
+alias mig="rake db:migrate" # STOP TRYING TO MAKE THIS rm - THINK ABOUT IT
 alias l="LSCOLORS=gxfxcxdxbxegedabagacad ls -lahGp"
-alias nomfix="rm -rf node_modules bower_components && npm install && bower install"
 alias nombom="npm cache clean && bower cache clean && rm -rf node_modules bower_components && npm install && bower install"
 alias nume="npm prune && npm install && bower prune && bower install"
-alias prune="npm prune && npm install && bower prune && bower install"
+alias prune="nume"
 alias todo="atom ~/todo"
 alias derp="ember deploy production --activate"
-
-alias dup='docker-machine start default && eval "$(docker-machine env default)"'
-alias ddown="docker-machine stop default"
 
 alias bs="brew services"
 
