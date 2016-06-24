@@ -25,10 +25,34 @@ compinit
 # fpath=(/usr/local/share/zsh-completions $fpath)
 
 # git prompt
-source $ZSH/zsh/zsh-git-prompt/zshrc.sh
-GIT_PROMPT_EXECUTABLE="haskell"
-PROMPT='%B%~%b$(git_super_status)
-``%T $ '
+
+# source $ZSH/zsh/zsh-git-prompt/zshrc.sh
+# GIT_PROMPT_EXECUTABLE="haskell"
+# PROMPT='%B%~%b$(git_super_status)
+# ``%T $ '
+
+source $ZSH/zsh/antigen/antigen.zsh
+POWERLEVEL9K_MODE='awesome-patched'
+antigen theme bhilburn/powerlevel9k powerlevel9k
+antigen apply
+
+POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+# POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=""
+POWERLEVEL9K_MULTILINE_SECOND_PROMPT_PREFIX="╰─ $ "
+
+ZSH_GIT_PROMPT_CLEAN_COLOR="green"
+ZSH_GIT_PROMPT_MODIFIED_COLOR="yellow"
+ZSH_GIT_PROMPT_UNTRACKED_COLOR="yellow"
+
+POWERLEVEL9K_CUSTOM_GIT_PROMPT_BACKGROUND="red"
+
+POWERLEVEL9K_CUSTOM_GIT_PROMPT="custom_git_prompt"
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon dir custom_git_prompt)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(time)
+
+export GIT_PROMPT_EXECUTABLE="haskell"
+export __GIT_PROMPT_DIR=$ZSH/zsh/zsh-git-prompt
+source $ZSH/zsh/custom_git_prompt.zsh
 
 source $ZSH/zsh/aliases.zsh
 
