@@ -1,5 +1,13 @@
-# shortcut to this dotfiles path is $ZSH
-export ZSH=$HOME/.dotfiles
+# shortcut to this dotfiles path is $DOTFILES
+export DOTFILES=$HOME/.dotfiles
+
+export PROJECTEDITOR="atom"
+
+export HISTFILE=~/.zsh_history
+setopt share_history
+
+# load /usr/local/sbin before /usr/sbin for php-fpm from homebrew
+PATH="/usr/local/sbin:$PATH"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
@@ -9,6 +17,8 @@ export PATH="$PATH:$HOME/bin"
 
 export NVM_DIR="/Users/markoleson/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+export PATH="$HOME/.cargo/bin:$PATH"
 
 # Load AVN (adds itself to PATH)
 [[ -s "$HOME/.avn/bin/avn.sh" ]] && source "$HOME/.avn/bin/avn.sh"
@@ -31,7 +41,7 @@ compinit
 # PROMPT='%B%~%b$(git_super_status)
 # ``%T $ '
 
-source $ZSH/zsh/antigen/antigen.zsh
+source $DOTFILES/zsh/antigen/antigen.zsh
 POWERLEVEL9K_MODE='awesome-patched'
 antigen theme bhilburn/powerlevel9k powerlevel9k
 antigen apply
@@ -54,10 +64,10 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon dir custom_git_prompt)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(time)
 
 export GIT_PROMPT_EXECUTABLE="haskell"
-export __GIT_PROMPT_DIR=$ZSH/zsh/zsh-git-prompt
-source $ZSH/zsh/custom_git_prompt.zsh
+export __GIT_PROMPT_DIR=$DOTFILES/zsh/zsh-git-prompt
+source $DOTFILES/zsh/custom_git_prompt.zsh
 
-source $ZSH/zsh/aliases.zsh
+source $DOTFILES/zsh/aliases.zsh
 
 # Print out my todo's
 cat ~/todo
