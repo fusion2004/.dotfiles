@@ -3,7 +3,9 @@ export DOTFILES=$HOME/.dotfiles
 
 export PROJECTEDITOR="atom"
 
-export HISTFILE=~/.zsh_history
+HISTFILE=~/.zsh_history
+HISTSIZE=1000
+SAVEHIST=1000
 setopt share_history
 
 # load /usr/local/sbin before /usr/sbin for php-fpm from homebrew
