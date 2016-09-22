@@ -6,7 +6,7 @@ export PROJECTEDITOR="atom"
 HISTFILE=~/.zsh_history
 HISTSIZE=1000
 SAVEHIST=1000
-setopt share_history
+# setopt share_history
 
 # load /usr/local/sbin before /usr/sbin for php-fpm from homebrew
 PATH="/usr/local/sbin:$PATH"
