@@ -139,8 +139,15 @@ install_dotfiles () {
   done
 }
 
+generate_ssh_keypair () {
+  info 'generating ssh keypair'
+
+  ssh-keygen -o -a 100 -t ed25519
+}
+
 setup_gitconfig
 install_dotfiles
+generate_ssh_keypair
 
 # If we're on a Mac, let's install and setup homebrew.
 if [ "$(uname -s)" == "Darwin" ]
