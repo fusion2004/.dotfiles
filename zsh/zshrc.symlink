@@ -70,6 +70,7 @@ export __GIT_PROMPT_DIR=$DOTFILES/zsh/zsh-git-prompt
 source $DOTFILES/zsh/custom_git_prompt.zsh
 
 source $DOTFILES/zsh/aliases.zsh
+source $DOTFILES/zsh/functions.zsh
 
 # Print out my todo's
 cat ~/todo
