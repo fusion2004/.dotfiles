@@ -8,6 +8,7 @@ alias ga="git add ."
 alias gap="git add -p"
 alias gb="git branch"
 alias gc="git commit -m "
+alias gcm="git commit"
 alias gco="git checkout"
 # alias gd="git diff"
 alias gd="git diff --color | diff-so-fancy | less --tabs=4 -RFX"
@@ -17,6 +18,7 @@ alias gr="git rebase"
 alias gs="git status"
 alias gp="git pull"
 alias gu="git push"
+alias gci="hub ci-status -v"
 
 alias a="atom ."
 alias b="bundle"
@@ -49,6 +51,11 @@ alias ets="ember t -s"
 alias dp="docker ps"
 alias db="docker start pg-develop"
 alias dc="docker-compose"
+
+# Gradle (IZEA)
+alias graploy="./gradlew clean package push publish promote"
+alias grapush="./gradlew clean package push"
+alias grabuild="./gradlew clean package"
 
 alias bs="brew services"
 
