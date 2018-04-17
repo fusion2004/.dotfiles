@@ -1,6 +1,7 @@
 # shortcut to this dotfiles path is $DOTFILES
 export DOTFILES=$HOME/.dotfiles
 
+export EDITOR="nvim"
 export PROJECTEDITOR="atom"
 
 HISTFILE=~/.zsh_history
@@ -31,6 +32,9 @@ export PATH="$PATH:$HOME/.rvm/bin"
 # Load RVM into a shell session *as a function*
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
+# Load autojump
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+
 # Completions for git and the like
 autoload -Uz compinit
 compinit
@@ -45,6 +49,7 @@ compinit
 
 source $DOTFILES/zsh/antigen/antigen.zsh
 POWERLEVEL9K_MODE='awesome-patched'
+antigen bundle zsh-users/zsh-syntax-highlighting
 antigen theme bhilburn/powerlevel9k powerlevel9k
 antigen apply
 
