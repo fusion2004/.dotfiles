@@ -8,7 +8,7 @@ function jira {
 
 function rc {
   if [ -n "${1+x}" ]; then
-    dc run $1 rails c
+    dc run --rm $1 rails c
   else
     rails c
   fi
@@ -16,8 +16,8 @@ function rc {
 
 function spec {
   if [ -n "${2+x}" ]; then
-    dc run $1 rspec $2
+    dc run --rm $1 rspec $2
   else
-    dc run $1 rspec
+    dc run --rm $1 rspec
   fi
 }
