@@ -1,7 +1,7 @@
 alias chr="open -a \"Google Chrome\""
 # alias jira="chr \"https://izeaeng.jira.com/projects/IZEAEX?selectedItem=com.atlassian.jira.jira-projects-plugin:release-page\""
-alias anal="chr \"https://izeaeng.jira.com/browse/IZEAEX-11257\""
 alias docs="chr \"https://github.com/IZEA/engineering_docs/wiki\""
+alias qa="chr \"https://izeaeng.jira.com/secure/RapidBoard.jspa?rapidView=68\""
 
 alias g="git"
 alias ga="git add ."

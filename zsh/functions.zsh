@@ -21,3 +21,7 @@ function spec {
     dc run --rm $1 rspec
   fi
 }
+
+function slackbanner {
+  figlet -f banner "$1" | sed -e"s/#/:$2:/g" | sed -e's/ /:blank:/g' | pbcopy
+}
