@@ -1,8 +1,13 @@
+tap 'codeclimate/formulae'
+
+cask 'chromedriver'
+cask 'java'
+cask 'homebrew/cask-versions/java8'
+
 brew 'autojump'
 brew 'awscli'
 brew 'bat'
 brew 'cabal-install'
-brew 'chromedriver'
 brew 'codeclimate'
 brew 'curl', args: ['with-nghttp2']
 brew 'diff-so-fancy'
@@ -35,6 +40,8 @@ brew 'youtube-dl'
 brew 'zsh'
 brew 'zsh-completions'
 
+
 # For akatosh dev
+tap 'bbc/audiowaveform'
 brew 'audiowaveform'
 brew 'taglib'
