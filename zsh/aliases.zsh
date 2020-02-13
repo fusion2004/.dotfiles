@@ -18,6 +18,8 @@ alias gr="git rebase"
 alias gs="git status"
 alias gp="git pull"
 alias gu="git push"
+alias gl="git log"
+alias glo="git log --oneline --decorate -20"
 alias gci="hub ci-status -v"
 
 alias a="atom ."

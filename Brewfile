@@ -1,4 +1,5 @@
 tap 'codeclimate/formulae'
+tap 'dbcli/tap'
 
 cask 'chromedriver'
 cask 'java'
@@ -20,6 +21,7 @@ brew 'git-lfs'
 brew 'go'
 brew 'gradle'
 brew 'haskell-stack'
+brew 'hub'
 brew 'hugo'
 brew 'httpie'
 brew 'jq'
@@ -31,6 +33,7 @@ brew 'neovim'
 brew 'openssl'
 brew 'overmind'
 brew 'postgresql'
+brew 'pgcli'
 brew 'python'
 brew 'redis'
 brew 'vim'
@@ -39,7 +42,6 @@ brew 'yarn', args: ['without-node']
 brew 'youtube-dl'
 brew 'zsh'
 brew 'zsh-completions'
-
 
 # For akatosh dev
 tap 'bbc/audiowaveform'

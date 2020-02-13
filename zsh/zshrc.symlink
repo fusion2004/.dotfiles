@@ -2,7 +2,7 @@
 export DOTFILES=$HOME/.dotfiles
 
 export EDITOR="nvim"
-export PROJECTEDITOR="atom"
+export PROJECTEDITOR="code"
 
 HISTFILE=~/.zsh_history
 HISTSIZE=1000
@@ -18,13 +18,7 @@ export PATH="/usr/local/heroku/bin:$PATH"
 # Add my bin scripts to PATH
 export PATH="$PATH:$HOME/bin"
 
-export NVM_DIR="/Users/markoleson/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" --no-use  # This loads nvm
-
 export PATH="$HOME/.cargo/bin:$PATH"
-
-# Load AVN (adds itself to PATH)
-[[ -s "$HOME/.avn/bin/avn.sh" ]] && source "$HOME/.avn/bin/avn.sh"
 
 # Add RVM to PATH for scripting
 export PATH="$PATH:$HOME/.rvm/bin"
@@ -79,9 +73,13 @@ source $DOTFILES/zsh/functions.zsh
 
 # Print out my todo's
 cat ~/todo
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # heroku autocomplete setup
 HEROKU_AC_ZSH_SETUP_PATH=/Users/markoleson/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
 
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+
+
+source /Users/markoleson/Library/Preferences/org.dystroy.broot/launcher/bash/br
+export VOLTA_HOME="/Users/markoleson/.volta"
+grep --silent "$VOLTA_HOME/bin" <<< $PATH || export PATH="$VOLTA_HOME/bin:$PATH"
