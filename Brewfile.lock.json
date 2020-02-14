@@ -811,6 +811,52 @@
       "heroku": {
         "version": "7.38.1",
         "bottle": false
+      },
+      "interactive-rebase-tool": {
+        "version": "1.2.1",
+        "bottle": {
+          "cellar": ":any_skip_relocation",
+          "prefix": "/usr/local",
+          "files": {
+            "catalina": {
+              "url": "https://homebrew.bintray.com/bottles/interactive-rebase-tool-1.2.1.catalina.bottle.tar.gz",
+              "sha256": "2a8d8d62c2b236884b25b0c43bfda93365501a80f807cabb071c7a682a2ea86b"
+            },
+            "mojave": {
+              "url": "https://homebrew.bintray.com/bottles/interactive-rebase-tool-1.2.1.mojave.bottle.tar.gz",
+              "sha256": "5be78d2011eb211939a6d4632f279477315c0bffd321c1aa303910756e966a48"
+            },
+            "high_sierra": {
+              "url": "https://homebrew.bintray.com/bottles/interactive-rebase-tool-1.2.1.high_sierra.bottle.tar.gz",
+              "sha256": "d28ef2f9af69ce2374eae1ad39591a575b5bc743e208b2cb023b8b432a4a231c"
+            }
+          }
+        }
+      },
+      "sox": {
+        "version": "14.4.2_3",
+        "bottle": {
+          "cellar": ":any",
+          "prefix": "/usr/local",
+          "files": {
+            "catalina": {
+              "url": "https://homebrew.bintray.com/bottles/sox-14.4.2_3.catalina.bottle.tar.gz",
+              "sha256": "fc412be07e577c2161763dfb509f4fb43f4fe3bca206a1b0b370687df0a264fa"
+            },
+            "mojave": {
+              "url": "https://homebrew.bintray.com/bottles/sox-14.4.2_3.mojave.bottle.tar.gz",
+              "sha256": "4906207f83bd0f4ea1a67d040891711e9a9e8830216e451072f2957ca566b83d"
+            },
+            "high_sierra": {
+              "url": "https://homebrew.bintray.com/bottles/sox-14.4.2_3.high_sierra.bottle.tar.gz",
+              "sha256": "c0bb4ba7ec922d9a8c71c2ba84e28c66c67e4fdeae970011ea45e937f43c18bd"
+            },
+            "sierra": {
+              "url": "https://homebrew.bintray.com/bottles/sox-14.4.2_3.sierra.bottle.tar.gz",
+              "sha256": "dc8c294bb96c0b7ebc3ade73476c6031664bb8e81a32ece87ce84f815deeced5"
+            }
+          }
+        }
       }
     }
   },

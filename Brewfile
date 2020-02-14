@@ -28,6 +28,7 @@ brew 'haskell-stack'
 brew 'heroku'
 brew 'hugo'
 brew 'httpie'
+brew 'interactive-rebase-tool'
 brew 'jq'
 brew 'kibana'
 brew 'libshout'
@@ -48,7 +49,8 @@ brew 'youtube-dl'
 brew 'zsh'
 brew 'zsh-completions'
 
-# For akatosh dev
+# For thasauce dev
 tap 'bbc/audiowaveform'
 brew 'audiowaveform'
 brew 'taglib'
+brew 'sox'
