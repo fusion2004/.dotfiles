@@ -21,20 +21,16 @@ alias gu="git push"
 alias gl="git log"
 alias glo="git log --oneline --decorate -20"
 alias gci="hub ci-status -v"
+alias pr="gh pr status"
 
 alias a="atom ."
 alias b="bundle"
-alias f="foreman start -c web=1,lucre=1,search=1"
-alias fw="foreman start -c web=1,lucre=1,search=1,worker=1,u-messaging=1"
-alias fbg="foreman start -c web=0,lucre=1,search=1,worker=1,u-messaging=1"
 alias rs="rails s -b 0.0.0.0"
-# alias fw="forego start -c web=1,lucre=1,search=1,worker=1,u-messaging=1"
-alias fs="foreman s"
 alias r="rake"
-# alias rc="rails c" # is now a function!
 alias mig="rake db:migrate" # STOP TRYING TO MAKE THIS rm - THINK ABOUT IT
 alias rt="rake test"
-alias l="LSCOLORS=gxfxcxdxbxegedabagacad ls -lahGp"
+# alias l="LSCOLORS=gxfxcxdxbxegedabagacad ls -lahGp"
+alias l="ls -lahGF"
 alias nombom="npm cache clean && bower cache clean && rm -rf node_modules bower_components && npm install && bower install"
 alias nume="npm prune && npm install && bower prune && bower install"
 alias prune="nume"
@@ -43,11 +39,6 @@ alias derp="ember deploy production --activate"
 alias dot="$PROJECTEDITOR $DOTFILES"
 alias barn="yarn install && yarn run bower install"
 alias yombom="rm -rf node_modules bower_components && yarn install && yarn run bower install"
-
-# Ember
-alias es="ember s"
-alias et="ember t"
-alias ets="ember t -s"
 
 # Docker
 alias dp="docker ps"
