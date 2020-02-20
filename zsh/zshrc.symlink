@@ -56,6 +56,7 @@ antigen bundle command-not-found
 antigen bundle dircycle
 antigen bundle ember-cli
 antigen bundle extract
+antigen bundle git
 antigen bundle httpie
 antigen bundle osx
 antigen bundle urltools
@@ -89,6 +90,7 @@ antigen apply
 # export __GIT_PROMPT_DIR=$DOTFILES/zsh/zsh-git-prompt
 # source $DOTFILES/zsh/custom_git_prompt.zsh
 
+# Please to keep this after antigen loads the git ohmyzsh plugin, since I override some aliases
 source $DOTFILES/zsh/aliases.zsh
 source $DOTFILES/zsh/functions.zsh
 
