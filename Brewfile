@@ -68,6 +68,7 @@ cask 'numi'
 # fonts
 cask 'font-fira-code'
 cask 'font-fira-mono'
+cask 'font-firacode-nerd-font'
 
 # app store
 mas 'Contrast', id: 1254981365
