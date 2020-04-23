@@ -2,10 +2,7 @@ tap 'codeclimate/formulae'
 tap 'dbcli/tap'
 tap 'github/gh'
 tap 'heroku/brew'
-
-cask 'chromedriver'
-cask 'java'
-cask 'homebrew/cask-versions/java8'
+tap 'homebrew/cask-fonts'
 
 brew 'autojump'
 brew 'awscli'
@@ -18,6 +15,7 @@ brew 'curl', args: ['with-nghttp2']
 brew 'diff-so-fancy'
 brew 'elasticsearch'
 brew 'elixir'
+brew 'exa'
 brew 'exercism'
 brew 'gh'
 brew 'git'
@@ -33,6 +31,8 @@ brew 'jq'
 brew 'kibana'
 brew 'libshout'
 brew 'logstash'
+brew 'magic-wormhole'
+brew 'mas'
 brew 'mosh'
 brew 'neovim'
 brew 'openssl'
@@ -42,6 +42,7 @@ brew 'pgcli'
 brew 'python'
 brew 'redis'
 brew 'tealdeer' # tldr client
+brew 'tig'
 brew 'vim'
 brew 'wget'
 brew 'yarn', args: ['without-node']
@@ -54,3 +55,19 @@ tap 'bbc/audiowaveform'
 brew 'audiowaveform'
 brew 'taglib'
 brew 'sox'
+
+# dem apps
+cask 'chromedriver'
+cask 'java'
+cask 'homebrew/cask-versions/java8'
+cask 'ngrok'
+cask 'fission'
+cask 'handbrake'
+cask 'numi'
+
+# fonts
+cask 'font-fira-code'
+cask 'font-fira-mono'
+
+# app store
+mas 'Contrast', id: 1254981365
