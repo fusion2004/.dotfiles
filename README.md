@@ -46,3 +46,4 @@ antigen reset
 - Install the brew bundle as part of the bootstrap
 - Conditionally generate the ssh keypair
   - Maybe integrate with GitHub & Gitlab somehow to easily add the key to your accounts?
+- Try [antibody](http://getantibody.github.io/)
