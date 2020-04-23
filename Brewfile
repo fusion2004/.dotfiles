@@ -41,6 +41,7 @@ brew 'overmind'
 brew 'postgresql'
 brew 'pgcli'
 brew 'python'
+brew 'rbenv'
 brew 'redis'
 brew 'tealdeer' # tldr client
 brew 'tig'
