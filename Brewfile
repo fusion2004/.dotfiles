@@ -4,6 +4,7 @@ tap 'github/gh'
 tap 'heroku/brew'
 tap 'homebrew/cask-fonts'
 
+brew 'antibody'
 brew 'autojump'
 brew 'awscli'
 brew 'axel'
