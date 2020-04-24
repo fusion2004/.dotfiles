@@ -6,6 +6,7 @@
   cm = commit -m
   aa = add .
   copybranch = !$DOTFILES/bin/git-copy-branch-name
+  nuke = !$DOTFILES/bin/git-nuke
   track = !$DOTFILES/bin/git-track
   undo = !$DOTFILES/bin/git-undo
   unpushed = !$DOTFILES/bin/git-unpushed
