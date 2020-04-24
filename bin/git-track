@@ -4,4 +4,10 @@
 # `origin/$branch-name`.
 
 branch=$(git rev-parse --abbrev-ref HEAD)
-git branch $branch --set-upstream-to origin/$branch
+
+if git rev-parse --verify origin/$branch > /dev/null 2>&1
+then
+  git branch $branch --set-upstream-to origin/$branch
+else
+  git push --set-upstream origin $branch
+fi
