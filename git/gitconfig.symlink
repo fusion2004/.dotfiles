@@ -1,11 +1,15 @@
-[user]
-	name = Mark Oleson
-	email = fusion2004@gmail.com
+[include]
+  path = ~/.gitconfig.local
 [alias]
   st = status
   co = checkout
   cm = commit -m
   aa = add .
+  copybranch = !$DOTFILES/bin/git-copy-branch-name
+  track = !$DOTFILES/bin/git-track
+  undo = !$DOTFILES/bin/git-undo
+  unpushed = !$DOTFILES/bin/git-unpushed
+  unstat = !$DOTFILES/bin/git-unpushed-stat
 [color]
   diff = auto
   status = auto
@@ -19,7 +23,8 @@
   required = true
 	process = git-lfs filter-process
 [core]
-  excludesfile = /Users/markoleson/.gitignore_global
+  excludesfile = ~/.gitignore_global
+  editor = nvim
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path =

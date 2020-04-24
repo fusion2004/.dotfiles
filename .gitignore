@@ -31,3 +31,6 @@ Temporary Items
 .apdisk
 
 # End of https://www.gitignore.io/api/macos
+
+# Don't commit the local gitconfig with the user's PII
+git/gitconfig.local.symlink
