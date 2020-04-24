@@ -23,7 +23,8 @@ alias gl="git log"
 # alias gci="hub ci-status -v"
 alias pr="gh pr status"
 
-alias a="atom ."
+# alias a="atom ."
+
 alias b="bundle"
 alias rs="rails s -b 0.0.0.0"
 alias r="rake"
@@ -38,9 +39,15 @@ alias nume="npm prune && npm install && bower prune && bower install"
 alias prune="nume"
 alias todo="atom ~/todo"
 alias derp="ember deploy production --activate"
-alias dot="$PROJECTEDITOR $DOTFILES"
+# alias dot="$PROJECTEDITOR $DOTFILES"
 alias barn="yarn install && yarn run bower install"
 alias yombom="rm -rf node_modules bower_components && yarn install && yarn run bower install"
+
+# Pipe my public key to my clipboard.
+alias pubkey="more ~/.ssh/id_ed25519.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
+
+alias ios="open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app"
+alias watchos="open /Applications/Xcode.app/Contents/Developer/Applications/Simulator\ \(Watch\).app"
 
 # Docker
 alias dp="docker ps"

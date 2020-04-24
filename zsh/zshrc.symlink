@@ -9,32 +9,44 @@ fi
 export DOTFILES=$HOME/.dotfiles
 
 export EDITOR="nvim"
-export PROJECTEDITOR="code"
+export GUIEDITOR="code"
 
 HISTFILE=~/.zsh_history
 HISTSIZE=1000
 SAVEHIST=1000
 # setopt share_history
 
+# Needed to get oh-my-zsh to load through antibody
 export ZSH="$(antibody home)/https-COLON--SLASH--SLASH-github.com-SLASH-robbyrussell-SLASH-oh-my-zsh"
 
 # To update plugins, update zsh_plugins.txt and then regenerate zsh_plugins.sh:
 #   antibody bundle < $DOTFILES/zsh/zsh_plugins.txt > $DOTFILES/zsh/zsh_plugins.sh
 #
+# We source this first, instead of making it an autoloaded .zsh file to that
+# oh-my-zsh plugins load first, because my aliases override some of them.
 source $DOTFILES/zsh/zsh_plugins.sh
 
-# Please to keep this after antibody loads the git ohmyzsh plugin, since I override some aliases
-source $DOTFILES/zsh/aliases.zsh
-source $DOTFILES/zsh/functions.zsh
+# all of our zsh files
+typeset -U config_files
+config_files=($DOTFILES/**/*.zsh)
 
-# load /usr/local/sbin before /usr/sbin for php-fpm from homebrew
-PATH="/usr/local/sbin:$PATH"
+# load the path files
+for file in ${(M)config_files:#*/_path.zsh}
+do
+  source $file
+done
+
+# load everything but the path and completion files
+for file in ${${config_files:#*/_path.zsh}:#*/completion.zsh}
+do
+  source $file
+done
+
+unset config_files
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-# Add my bin scripts to PATH
-export PATH="$PATH:$HOME/bin"
 
 export PATH="$HOME/.cargo/bin:$PATH"
 
@@ -52,4 +64,4 @@ eval "$(rbenv init -)"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 # [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-source $DOTFILES/zsh/p10k.zsh
+# source $DOTFILES/zsh/p10k.zsh

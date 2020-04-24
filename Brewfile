@@ -1,9 +1,14 @@
+# frozen_string_literal: true
+
+# taps
 tap 'codeclimate/formulae'
 tap 'dbcli/tap'
 tap 'github/gh'
 tap 'heroku/brew'
 tap 'homebrew/cask-fonts'
+tap 'bbc/audiowaveform'
 
+# general tools
 brew 'antibody'
 brew 'autojump'
 brew 'awscli'
@@ -47,18 +52,16 @@ brew 'tealdeer' # tldr client
 brew 'tig'
 brew 'vim'
 brew 'wget'
-brew 'yarn', args: ['without-node']
 brew 'youtube-dl'
 brew 'zsh'
 brew 'zsh-completions'
 
-# For thasauce dev
-tap 'bbc/audiowaveform'
+# audio tools
 brew 'audiowaveform'
 brew 'taglib'
 brew 'sox'
 
-# dem apps
+# casks
 cask 'chromedriver'
 cask 'java'
 cask 'homebrew/cask-versions/java8'
@@ -74,3 +77,5 @@ cask 'font-firacode-nerd-font'
 
 # app store
 mas 'Contrast', id: 1254981365
+# add everything i have installed
+# especially xcode

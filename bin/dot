@@ -1,0 +1,62 @@
+#!/usr/bin/env zsh
+#
+# dot
+#
+# `dot` handles installation, updates, things like that. Run it periodically
+# to make sure you're on the latest and greatest.
+
+set -e
+
+export DOTFILES=$HOME/.dotfiles
+
+displayUsageAndExit() {
+	echo "dot -- dotfiles management"
+	echo ""
+	echo "Usage: dot [options]"
+	echo ""
+	echo "Options:"
+	echo "  -e, --edit    Open dotfiles directory for editing"
+	echo "  -h, --help    Show this help message and exit"
+	exit
+}
+
+while test $# -gt 0; do
+	case "$1" in
+		"-h"|"--help")
+			displayUsageAndExit
+			;;
+		"-e"|"--edit")
+			exec "$GUIEDITOR" "$DOTFILES"
+			exit
+			;;
+		*)
+			echo "Invalid option: $1"
+			displayUsageAndExit
+			;;
+	esac
+	shift
+done
+
+# Install xcode command line tools
+$DOTFILES/macos/xcode.sh
+
+# Install homebrew
+$DOTFILES/homebrew/install.sh
+
+# Upgrade homebrew
+echo
+echo "› brew update"
+brew update
+
+echo
+echo "› brew upgrade"
+brew upgrade
+
+# Remove outdated versions from the cellar.
+echo
+echo "› brew cleanup"
+brew cleanup
+
+# Install software
+echo "› $DOTFILES/install"
+$DOTFILES/install
