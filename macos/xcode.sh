@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env zsh
 # Installs xcode command line tools
 #
 # This needs to be done before other dependencies because without them we can't
