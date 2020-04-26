@@ -2,6 +2,8 @@
 
 ## Setup
 
+### Bootstrap
+
 Clone this repo into `~/.dotfiles`, then run the bootstrap:
 
 ```shell
@@ -10,6 +12,8 @@ Clone this repo into `~/.dotfiles`, then run the bootstrap:
 
 > You should only need to run this script once per machine setup, unless you add more .symlink files
 
+### Dependencies
+
 At the end of that script, it will prompt you to run the dependency installer:
 
 ```shell
@@ -17,6 +21,8 @@ dot
 ```
 
 > This script should be run regularly, as it will also update dependencies.
+
+### Manual steps
 
 There are a few manual steps you'll need to take as well:
 
