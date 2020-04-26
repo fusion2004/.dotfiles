@@ -2,40 +2,46 @@
 
 ## Setup
 
-Clone this repo, then run:
-
-```shell
-git submodule update --init --recursive
-```
-
-That will get antigen, the plugin manager for zsh.
-
-Then run the bootstrap:
+Clone this repo into `~/.dotfiles`, then run the bootstrap:
 
 ```shell
 ./bootstrap.sh
 ```
 
-And finally, install the homebrew bundle:
+> You should only need to run this script once per machine setup, unless you add more .symlink files
+
+At the end of that script, it will prompt you to run the dependency installer:
 
 ```shell
-brew bundle
+dot
 ```
+
+> This script should be run regularly, as it will also update dependencies.
+
+There are a few manual steps you'll need to take as well:
+
+1. Visit git hosting providers and supply my ssh public key:
+   1. Copy the key:
+
+      ```shell
+      pubkey
+      ```
+
+    2. [GitHub](https://github.com/settings/keys)
+    3. Gitlab
+    4. Bitbucket
+
+2. Open Visual Studio Code and [import settings following this guide](vscode/settings.md)
 
 ## Updating
 
-To update antigen itself:
+To update all dependencies, just run `dot` on a regular basis.
 
 ```shell
-git pull --recurse-submodules
-git submodule update --remote
+dot
 ```
 
-To update the antibody plugins:
-
-```shell
-antibody update
-```
+> `dot` can also be used to open this repository in your editor: `dot -e`
 
 ## TODO
 
@@ -45,8 +51,5 @@ antibody update
 - docker install.sh
   - [mac_os config installers](https://github.com/bkuhlmann/mac_os/blob/master/lib/installers.sh)
   - [Docker.app](https://github.com/bkuhlmann/mac_os-config/blob/acf742e076a3ece9d229aef2e8dd53fb0dcf4f1d/lib/settings.sh#L34)
-- Conditionally generate the ssh keypair
-  - Maybe integrate with GitHub & Gitlab somehow to easily add the key to your accounts?
-  - Though actually... doesn't this need to happen before this is cloned so we can get the repo onto the comp?
-    - might actually be fine because it's a public repo and macOS ships with git
+  - actually.. this might be a cask!
 - Try out [taskwarrior](https://taskwarrior.org/)
