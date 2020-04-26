@@ -1,0 +1,28 @@
+#!/usr/bin/env zsh
+#
+# Opens the current directory on the internet!
+# This only works for directories that have a web presentation:
+# - git repo
+#   - with github.com origin remote
+
+function open_git() {
+  remote_url=$(git config --get remote.origin.url)
+
+  case $remote_url in
+    git\@github\.com\:*)
+      gh repo view -w
+      ;;
+    *)
+      echo "We don't know how to open a git repo with this origin: $remote_url"
+      exit 1
+      ;;
+  esac
+}
+
+if [ -d ".git" ]
+then
+  open_git
+else
+  echo "We don't know how to open this directory on the web"
+  exit 1
+fi
