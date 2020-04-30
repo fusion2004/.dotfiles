@@ -27,17 +27,27 @@ dot
 There are a few manual steps you'll need to take as well:
 
 1. Visit git hosting providers and supply my ssh public key:
-   1. Copy the key:
-
-      ```shell
-      pubkey
-      ```
-
-    2. [GitHub](https://github.com/settings/keys)
-    3. Gitlab
-    4. Bitbucket
+   1. Copy the key with: `pubkey`
+   2. [GitHub](https://github.com/settings/keys)
+   3. Gitlab
+   4. Bitbucket
 
 2. Open Visual Studio Code and [import settings following this guide](vscode/settings.md)
+
+3. Install color themes
+   1. Install Dracula Pro on
+      1. Visual Studio Code
+      2. iTerm2
+      3. Slack
+      4. bat
+
+         ```shell
+         mkdir -p "$(bat --config-dir)/themes"
+         cd "$(bat --config-dir)/themes"
+         open .
+         # copy the sublime themes here
+         bat cache --build
+         ```
 
 ## Updating
 
@@ -59,3 +69,7 @@ dot
   - [Docker.app](https://github.com/bkuhlmann/mac_os-config/blob/acf742e076a3ece9d229aef2e8dd53fb0dcf4f1d/lib/settings.sh#L34)
   - actually.. this might be a cask!
 - Try out [taskwarrior](https://taskwarrior.org/)
+- make the symlinking support:
+  - directories
+  - highly nested files and directories
+- configure p10k text colors to be darker
