@@ -1,0 +1,58 @@
+#!/usr/bin/env zsh
+#
+# Manage postgres containers running in docker.
+#
+# With no arguments, it will tell you all the running container whose names
+# start with pg-
+#
+# With one argument, it will shutdown all containers whose names start with
+# "pg-", and start only the one specified by the argument (prefixed by pg-)
+
+displayUsageAndExit() {
+  echo "db -- docker postgres management"
+  echo ""
+  echo "Usage: db [container suffix or command]"
+  echo ""
+  echo "Command:"
+  echo "  -s, --stop    Stop all container starting with pg-*"
+  echo "  -h, --help    Show this help message and exit"
+  echo ""
+  echo "If a container suffix is specified, the --stop command is"
+  echo "run and the container specified is started."
+  echo "To run a container named pg-app, run: db app"
+  exit
+}
+
+stopAll() {
+  containers=$(docker container ls -q --filter name="pg-*")
+  if [ -z "$containers" ]
+  then
+    echo "No containers to stop"
+  else
+    docker container stop $containers
+  fi
+}
+
+stopAllAndStartNamed() {
+  stopAll
+  docker container start $1
+}
+
+if [ $# -eq 0 ]
+then
+  docker container ls --filter name="pg-*"
+  exit
+fi
+
+case "$1" in
+  "-h"|"--help")
+    displayUsageAndExit
+    ;;
+  "-s"|"--stop")
+    stopAll
+    exit
+    ;;
+  *)
+    stopAllAndStartNamed pg-$1
+    ;;
+esac

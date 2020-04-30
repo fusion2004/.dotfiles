@@ -51,7 +51,7 @@ alias watchos="open /Applications/Xcode.app/Contents/Developer/Applications/Simu
 
 # Docker
 alias dp="docker ps"
-alias db="docker start pg-develop"
+# alias db="docker start pg-develop"
 alias dc="docker-compose"
 
 # Gradle (IZEA)
