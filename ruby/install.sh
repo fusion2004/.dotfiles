@@ -2,7 +2,7 @@
 # Install ruby, bundler, and default gems
 
 function install_gems() {
-  gem install rubocop:0.80.1 rubocop-rails solargraph
+  gem install rubocop:0.92.0 rubocop-rails solargraph
 }
 
 eval "$(rbenv init -)"
