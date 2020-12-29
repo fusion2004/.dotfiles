@@ -34,8 +34,18 @@ There are a few manual steps you'll need to take as well:
 
 2. Open Visual Studio Code and [import settings following this guide](vscode/settings.md)
 
-3. Install color themes
-   1. Install Dracula Pro on
+3. Apps that need to be opened and setup so they automatically start on boot:
+   - Muzzle
+   - Alfred?
+   - Docker?
+   - Pock?
+   - Dropbox?
+   - 1Password?
+   - Karabiner-Elements?
+   - ShiftIt?
+
+4. Install color themes
+   1. Install [Dracula Pro](https://gumroad.com/d/5dc3bcd1468b4d634b838a351b38457a) on
       1. Visual Studio Code
       2. iTerm2
       3. Slack
