@@ -1,0 +1,32 @@
+#!/usr/bin/env zsh
+#
+# st - short for start
+#
+# `st` starts the software whose repository you are in.
+# It attempts to make smart guesses as to how to make that happen!
+
+set -e
+
+runYarnScripts() {
+  if yarn --json --non-interactive run | jq -e ".data?.items? | index(\"serve\")" >/dev/null
+  then
+    echo "Running yarn run serve"
+    yarn run serve
+  else
+    echo "Running yarn run start"
+    yarn run start
+  fi
+}
+
+if [[ -a script/start ]]
+then
+  echo "Running script/start"
+  script/start
+elif [[ -a Gemfile ]]
+then
+  echo "Running overmind s"
+  overmind s
+elif [[ -a package.json ]]
+then
+  runYarnScripts
+fi
