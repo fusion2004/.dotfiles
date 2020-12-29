@@ -34,3 +34,5 @@
 	trustExitCode = true
 [sequence]
 	editor = interactive-rebase-tool
+[pull]
+	rebase = false
