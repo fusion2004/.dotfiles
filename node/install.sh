@@ -15,5 +15,5 @@ echo "› Installing node..."
 volta install node
 
 echo
-echo "› Installing ember-cli..."
-volta install ember-cli
+echo "› Installing volta/node global tools..."
+volta install ember-cli yalc commitizen gitmoji-cli i18n-cloud-translator
