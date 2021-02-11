@@ -53,6 +53,7 @@ alias watchos="open /Applications/Xcode.app/Contents/Developer/Applications/Simu
 alias dp="docker ps"
 # alias db="docker start pg-develop"
 alias dc="docker-compose"
+alias lzd="lazydocker"
 
 # Gradle (IZEA)
 alias graploy="./gradlew clean package push publish promote"
