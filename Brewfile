@@ -8,6 +8,7 @@ tap 'heroku/brew'
 tap 'homebrew/cask-fonts'
 tap 'bbc/audiowaveform'
 tap 'jesseduffield/lazydocker'
+tap 'hashicorp/tap'
 
 # general tools
 brew 'antibody'
@@ -55,6 +56,7 @@ brew 'rbenv'
 brew 'redis'
 brew 'shellcheck'
 brew 'tealdeer' # tldr client
+brew 'hashicorp/tap/terraform'
 brew 'trash'
 brew 'tig'
 brew 'vim'
@@ -83,6 +85,7 @@ cask 'muzzle'
 cask 'ocenaudio'
 cask 'hey'
 cask 'softu2f'
+cask 'keepingyouawake'
 
 # fonts
 cask 'font-fira-code'
