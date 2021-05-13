@@ -83,3 +83,4 @@ dot
   - directories
   - highly nested files and directories
 - configure p10k text colors to be darker
+- [Dash](https://www.kapeli.com/dash)
