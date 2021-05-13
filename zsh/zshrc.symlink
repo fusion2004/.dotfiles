@@ -67,5 +67,12 @@ eval "$(rbenv init -)"
 
 eval "$(pyenv init -)"
 export PATH="$HOME/.local/bin:$PATH"
+
+
+#### FIG ENV VARIABLES ####
+[ -s ~/.fig/fig.sh ] && source ~/.fig/fig.sh
+#### END FIG ENV VARIABLES ####
+
+
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
