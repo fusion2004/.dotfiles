@@ -22,7 +22,7 @@ install_gems
 echo
 echo "› Installing ruby 3.0.1"
 rbenv install --skip-existing 3.0.1
-rbenv shell 3.0.0
+rbenv shell 3.0.1
 gem update --system
 
 echo
