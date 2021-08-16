@@ -64,10 +64,11 @@ eval "$(rbenv init -)"
 # [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 # source $DOTFILES/zsh/p10k.zsh
 
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
 
-eval "$(pyenv init -)"
 export PATH="$HOME/.local/bin:$PATH"
-
 
 #### FIG ENV VARIABLES ####
 [ -s ~/.fig/fig.sh ] && source ~/.fig/fig.sh
