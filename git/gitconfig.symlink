@@ -36,3 +36,5 @@
 	editor = interactive-rebase-tool
 [pull]
 	rebase = false
+[init]
+	defaultBranch = main
