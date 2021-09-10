@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env sh
 #
 # bootstrap installs things.
 # lovingly borrowed from https://github.com/holman/dotfiles/blob/master/script/bootstrap
