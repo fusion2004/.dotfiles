@@ -93,6 +93,7 @@ cask 'hey'
 cask 'softu2f'
 cask 'keepingyouawake'
 cask 'session-manager-plugin'
+cask 'rocket'
 
 # fonts
 cask 'font-fira-code'
