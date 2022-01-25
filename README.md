@@ -38,11 +38,9 @@ There are a few manual steps you'll need to take as well:
    - Muzzle
    - Alfred?
    - Docker?
-   - Pock?
    - Dropbox?
    - 1Password?
    - Karabiner-Elements?
-   - ShiftIt?
 
 4. Install color themes
    1. Install [Dracula Pro](https://gumroad.com/d/5dc3bcd1468b4d634b838a351b38457a) on
