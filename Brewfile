@@ -80,22 +80,23 @@ brew 'sox'
 
 # casks
 cask 'chromedriver'
-cask 'java'
-cask 'homebrew/cask-versions/java8'
-cask 'ngrok'
 cask 'fission'
 cask 'handbrake'
-cask 'numi'
-cask 'proxyman'
-cask 'paw'
-cask 'insomnia'
-cask 'muzzle'
-cask 'ocenaudio'
 cask 'hey'
-cask 'softu2f'
+cask 'homebrew/cask-versions/java8'
+cask 'insomnia'
+cask 'java'
 cask 'keepingyouawake'
-cask 'session-manager-plugin'
+cask 'muzzle'
+cask 'ngrok'
+cask 'numi'
+cask 'ocenaudio'
+cask 'omnidisksweeper'
+cask 'paw'
+cask 'proxyman'
 cask 'rocket'
+cask 'session-manager-plugin'
+cask 'softu2f'
 
 # fonts
 cask 'font-fira-code'
@@ -103,6 +104,6 @@ cask 'font-fira-mono'
 cask 'font-firacode-nerd-font'
 
 # app store
-mas 'Contrast', id: 1254981365
+# mas 'Contrast', id: 1254981365
 # add everything i have installed
 # especially xcode
