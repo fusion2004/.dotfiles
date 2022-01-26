@@ -4,6 +4,8 @@
 
 ### Bootstrap
 
+Sign in to the Mac App Store.
+
 Clone this repo into `~/.dotfiles`, then run the bootstrap:
 
 ```shell
@@ -47,7 +49,8 @@ There are a few manual steps you'll need to take as well:
       1. Visual Studio Code
       2. iTerm2
       3. Slack
-      4. bat
+      4. Alfred
+      5. bat
 
          ```shell
          mkdir -p "$(bat --config-dir)/themes"
@@ -56,6 +59,10 @@ There are a few manual steps you'll need to take as well:
          # copy the sublime themes here
          bat cache --build
          ```
+
+5. Install manual software:
+   1. [Focusrite Control for Scarlett 2i2 3rd Gen](https://customer.focusritegroup.com/en/support/downloads?brand=Focusrite&product_by_type=1361&download_type=software)
+   2. [Rust](https://www.rust-lang.org/tools/install)
 
 ## Updating
 
@@ -69,16 +76,10 @@ dot
 
 ## TODO
 
-- add all the apps ever as cask and mas commands in Brewfile
 - split all the things out into topic directories from my zshrc
 - rust install.sh
-- docker install.sh
-  - [mac_os config installers](https://github.com/bkuhlmann/mac_os/blob/master/lib/installers.sh)
-  - [Docker.app](https://github.com/bkuhlmann/mac_os-config/blob/acf742e076a3ece9d229aef2e8dd53fb0dcf4f1d/lib/settings.sh#L34)
-  - actually.. this might be a cask!
 - Try out [taskwarrior](https://taskwarrior.org/)
 - make the symlinking support:
   - directories
   - highly nested files and directories
 - configure p10k text colors to be darker
-- [Dash](https://www.kapeli.com/dash)
