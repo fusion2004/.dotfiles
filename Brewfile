@@ -38,7 +38,6 @@ brew 'go'
 brew 'gradle'
 brew 'haskell-stack'
 brew 'heroku'
-brew 'homebrew-ffmpeg/ffmpeg/ffmpeg', args: %w[with-libopenmpt with-game-music-emu]
 brew 'hugo'
 brew 'httpie'
 brew 'git-interactive-rebase-tool'
@@ -77,26 +76,57 @@ brew 'zsh-completions'
 brew 'audiowaveform'
 brew 'taglib'
 brew 'sox'
+brew 'libopenmpt'
+brew 'game-music-emu'
+brew 'homebrew-ffmpeg/ffmpeg/ffmpeg', args: %w[with-libopenmpt with-game-music-emu]
 
 # casks
+cask '1password'
+cask 'alfred'
+cask 'audacity'
 cask 'chromedriver'
-cask 'fission'
+cask 'homebrew/cask/dash'
+cask 'discord'
+cask 'homebrew/cask/docker'
+cask 'dropbox'
+cask 'elgato-control-center'
+cask 'fig'
+cask 'figma'
+cask 'firefox'
+cask 'fork'
+cask 'github'
+cask 'google-chrome'
+cask 'google-chrome-canary'
 cask 'handbrake'
 cask 'hey'
 cask 'homebrew/cask-versions/java8'
 cask 'insomnia'
+cask 'iterm2'
 cask 'java'
-cask 'keepingyouawake'
+cask 'karabiner-elements'
 cask 'muzzle'
 cask 'ngrok'
 cask 'numi'
+cask 'obsidian'
 cask 'ocenaudio'
 cask 'omnidisksweeper'
 cask 'paw'
+cask 'pictogram'
+# cask 'pop'
+# cask 'postman'
 cask 'proxyman'
-cask 'rocket'
 cask 'session-manager-plugin'
-cask 'softu2f'
+cask 'sequential'
+cask 'slack'
+cask 'spotify'
+cask 'sublime-text'
+cask 'surfshark'
+cask 'tableplus'
+cask 'telegram'
+cask 'transmit'
+cask 'tuple'
+cask 'visual-studio-code'
+cask 'vlc'
 
 # fonts
 cask 'font-fira-code'
@@ -104,6 +134,14 @@ cask 'font-fira-mono'
 cask 'font-firacode-nerd-font'
 
 # app store
+mas 'Affinity Photo', id: 824183456
+mas 'Amphetamine', id: 937984704
+mas 'Dato', id: 1470584107
+mas 'GIPHY CAPTURE', id: 668208984
+mas 'Harvest', id: 506189836
+mas 'Parcel', id: 639968404
+mas 'Reeder', id: 1529448980
+mas 'The Unarchiver', id: 425424353
+mas 'Tweetbot', id: 1384080005
+mas 'Xcode', id: 497799835
 # mas 'Contrast', id: 1254981365
-# add everything i have installed
-# especially xcode
