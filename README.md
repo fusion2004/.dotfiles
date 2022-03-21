@@ -28,15 +28,17 @@ dot
 
 There are a few manual steps you'll need to take as well:
 
-1. Visit git hosting providers and supply my ssh public key:
+1. Install the antibody zsh plugins: `antibody bundle < $DOTFILES/zsh/zsh_plugins.txt > $DOTFILES/zsh/zsh_plugins.sh` & re-run `dot`.
+
+2. Visit git hosting providers and supply my ssh public key:
    1. Copy the key with: `pubkey`
    2. [GitHub](https://github.com/settings/keys)
    3. Gitlab
    4. Bitbucket
 
-2. Open Visual Studio Code and [import settings following this guide](vscode/settings.md)
+3. Open Visual Studio Code and [import settings following this guide](vscode/settings.md)
 
-3. Apps that need to be opened and setup so they automatically start on boot:
+4. Apps that need to be opened and setup so they automatically start on boot:
    - Muzzle
    - Alfred?
    - Docker?
@@ -44,7 +46,7 @@ There are a few manual steps you'll need to take as well:
    - 1Password?
    - Karabiner-Elements?
 
-4. Install color themes
+5. Install color themes
    1. Install [Dracula Pro](https://gumroad.com/d/5dc3bcd1468b4d634b838a351b38457a) on
       1. Visual Studio Code
       2. iTerm2
@@ -60,7 +62,7 @@ There are a few manual steps you'll need to take as well:
          bat cache --build
          ```
 
-5. Install manual software:
+6. Install manual software:
    1. [Focusrite Control for Scarlett 2i2 3rd Gen](https://customer.focusritegroup.com/en/support/downloads?brand=Focusrite&product_by_type=1361&download_type=software)
    2. [Rust](https://www.rust-lang.org/tools/install)
 
