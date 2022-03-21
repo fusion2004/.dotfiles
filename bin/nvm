@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#
+# A fake nvm so things don't yell at me for not having it.
+
+echo "Hello, I am definitely a real nvm!"
+echo "  Actually, I'm: $BASH_SOURCE"
+echo "  And I was run with: $*"
