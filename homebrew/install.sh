@@ -8,13 +8,13 @@
 echo
 
 # Check for Homebrew
-if test ! $(which brew)
+if type brew >/dev/null 2>&1; 
 then
+  echo "› Homebrew already installed"
+else
   echo "› Installing Homebrew"
 
-  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-else
-  echo "› Homebrew already installed"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
 exit 0
