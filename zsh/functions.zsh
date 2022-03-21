@@ -1,8 +1,8 @@
 function jira {
   if [ -n "${1+x}" ]; then
-    chr "https://izeaeng.jira.com/secure/QuickSearch.jspa?searchString=$1"
+    chr "${JIRA_BASE_URL}/secure/QuickSearch.jspa?searchString=$1"
   else
-    chr "https://izeaeng.jira.com/projects/IZEAEX?selectedItem=com.atlassian.jira.jira-projects-plugin:release-page"
+    chr "${JIRA_BASE_URL}"
   fi
 }
 
@@ -53,4 +53,14 @@ function tcolor {
   echo -e "\033]6;1;bg;green;brightness;26\a"
   echo -e "\033]6;1;bg;blue;brightness;119\a"
   esac
+}
+
+function chromedriver-sync {
+  chromeVersion=$(/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --version)
+  echo "Found Google Chrome version $chromeVersion"
+  majRelease=$(echo $chromeVersion | awk ' { split($3, out, ".") ;print out[1] }' )
+  echo "Finding appropriate chromedriver for version $majRelease..."
+  chromedriverVersion=$(curl --silent "https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$majRelease")
+  echo "Attempting to set chromedriver version to $chromedriverVersion..."
+  (PS4='> ' ; set -x ; chromedriver-update $chromedriverVersion)
 }
