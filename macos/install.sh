@@ -15,7 +15,7 @@ echo "Installing system software updates..."
 echo "› sudo softwareupdate -i -a"
 sudo softwareupdate -i -a
 
-echo
-echo "Updating App Store apps..."
-echo "› mas upgrade"
-mas upgrade
+# echo
+# echo "Updating App Store apps..."
+# echo "› mas upgrade"
+# mas upgrade

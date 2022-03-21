@@ -2,19 +2,17 @@
 
 # taps
 tap 'codeclimate/formulae'
-tap 'dbcli/tap'
 tap 'github/gh'
 tap 'heroku/brew'
 tap 'homebrew/cask-fonts'
 tap 'bbc/audiowaveform'
-tap 'jesseduffield/lazydocker'
 tap 'hashicorp/tap'
 tap 'homebrew-ffmpeg/ffmpeg'
 tap 'buildpacks/tap'
 
 # general tools
 brew 'antibody'
-# brew 'autojump' # zoxide instead!
+brew 'autojump' # zoxide instead!
 brew 'awscli'
 brew 'axel'
 brew 'bash'
@@ -22,7 +20,7 @@ brew 'bat'
 brew 'broot'
 brew 'cabal-install'
 brew 'codeclimate'
-brew 'curl', args: ['with-nghttp2']
+brew 'curl'
 brew 'diff-so-fancy'
 brew 'elixir'
 brew 'exa'
@@ -39,9 +37,8 @@ brew 'haskell-stack'
 brew 'heroku'
 brew 'hugo'
 brew 'httpie'
+brew 'jless'
 brew 'jq'
-brew 'kibana'
-brew 'jesseduffield/lazydocker/lazydocker'
 brew 'magic-wormhole'
 brew 'mas'
 brew 'mosh'
@@ -81,13 +78,14 @@ brew 'libshout'
 cask '1password'
 cask 'alfred'
 cask 'audacity'
+cask 'bartender'
 cask 'chromedriver'
 cask 'homebrew/cask/dash'
 cask 'devutils'
 cask 'discord'
 cask 'homebrew/cask/docker'
 cask 'dropbox'
-cask 'elgato-control-center'
+cask 'homebrew/cask-drivers/elgato-control-center'
 cask 'fig'
 cask 'figma'
 cask 'firefox'
@@ -97,11 +95,11 @@ cask 'google-chrome'
 cask 'google-chrome-canary'
 cask 'handbrake'
 cask 'hey'
-cask 'homebrew/cask-versions/java8'
+# cask 'homebrew/cask-versions/java8'
 cask 'insomnia'
 cask 'iterm2'
-cask 'java'
-cask 'karabiner-elements'
+# cask 'java'
+# cask 'karabiner-elements'
 cask 'muzzle'
 cask 'ngrok'
 cask 'numi'
@@ -121,6 +119,7 @@ cask 'sublime-text'
 cask 'surfshark'
 cask 'tableplus'
 cask 'telegram'
+cask 'telegram-desktop'
 cask 'transmit'
 cask 'tuple'
 cask 'visual-studio-code'
@@ -129,17 +128,17 @@ cask 'vlc'
 # fonts
 cask 'font-fira-code'
 cask 'font-fira-mono'
-cask 'font-firacode-nerd-font'
+cask 'font-fira-code-nerd-font'
 
 # app store
-mas 'Affinity Photo', id: 824183456
-mas 'Amphetamine', id: 937984704
-mas 'Dato', id: 1470584107
-mas 'GIPHY CAPTURE', id: 668208984
-mas 'Harvest', id: 506189836
-mas 'Parcel', id: 639968404
-mas 'Reeder', id: 1529448980
-mas 'The Unarchiver', id: 425424353
-mas 'Tweetbot', id: 1384080005
-mas 'Xcode', id: 497799835
+# mas 'Affinity Photo', id: 824183456
+# mas 'Amphetamine', id: 937984704
+# mas 'Dato', id: 1470584107
+# mas 'GIPHY CAPTURE', id: 668208984
+# mas 'Harvest', id: 506189836
+# mas 'Parcel', id: 639968404
+# mas 'Reeder', id: 1529448980
+# mas 'The Unarchiver', id: 425424353
+# mas 'Tweetbot', id: 1384080005
+# mas 'Xcode', id: 497799835
 # mas 'Contrast', id: 1254981365
