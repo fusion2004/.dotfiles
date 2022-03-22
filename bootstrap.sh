@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 #
 # bootstrap installs things.
 # lovingly borrowed from https://github.com/holman/dotfiles/blob/master/script/bootstrap
