@@ -8,9 +8,9 @@ function jira {
 
 function rc {
   if [ -n "${1+x}" ]; then
-    dc run --rm $1 rails c
+    dc run --rm $1 bundle exec rails c
   else
-    rails c
+    bundle exec rails c
   fi
 }
 
