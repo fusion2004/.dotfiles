@@ -11,8 +11,8 @@ echo "› Installing volta..."
 curl https://get.volta.sh | bash
 
 echo
-echo "› Installing node..."
-volta install node
+echo "› Installing node & npm..."
+volta install node npm
 
 echo
 echo "› Installing volta/node global tools..."
