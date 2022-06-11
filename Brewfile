@@ -66,7 +66,7 @@ brew 'zsh'
 brew 'zsh-completions'
 
 # audio tools
-brew 'audiowaveform'
+brew 'audiowaveform' if File.exist?("/usr/bin/clang++") # install via apt on linux
 brew 'taglib'
 brew 'sox'
 brew 'libopenmpt'
