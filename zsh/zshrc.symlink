@@ -61,7 +61,7 @@ HEROKU_AC_ZSH_SETUP_PATH=/Users/markoleson/Library/Caches/heroku/autocomplete/zs
 
 # export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 
-source /Users/markoleson/.config/broot/launcher/bash/br
+source ~/.config/broot/launcher/bash/br
 
 eval "$(rbenv init -)"
 
