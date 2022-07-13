@@ -56,10 +56,8 @@ alias dp="docker ps"
 alias dc="docker-compose"
 alias lzd="lazydocker"
 
-# Gradle (IZEA)
-alias graploy="./gradlew clean package push publish promote"
-alias grapush="./gradlew clean package push"
-alias grabuild="./gradlew clean package"
+# node
+alias ni="npm i"
 
 alias bs="brew services"
 
