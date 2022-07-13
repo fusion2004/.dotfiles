@@ -80,11 +80,11 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 
 # This is local to each computer, but needs to set:
 # - JIRA_BASE_URL: the base url/path for the relevant Jira instance (without a trailing /)
-source ~/.zsh_fusion_config
+[[ -f "$HOME/.zsh_fusion_config" ]] && source ~/.zsh_fusion_config
 
 ulimit -n 1024
 
-source ~/.glrc
+[[ -f "$HOME/.glrc" ]] && source ~/.glrc
 
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && . "$HOME/.fig/shell/zshrc.post.zsh"
