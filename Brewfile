@@ -12,7 +12,6 @@ tap 'buildpacks/tap'
 
 # general tools
 brew 'antibody'
-brew 'autojump' # zoxide instead!
 brew 'awscli'
 brew 'axel'
 brew 'bash'
