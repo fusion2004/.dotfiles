@@ -26,11 +26,7 @@ alias pr="gh pr status"
 # alias a="atom ."
 
 alias b="bundle"
-alias be="b exec"
 alias rs="rails s -b 0.0.0.0"
-alias r="rake"
-alias mig="rake db:migrate" # STOP TRYING TO MAKE THIS rm - THINK ABOUT IT
-alias rt="rake test"
 # alias l="LSCOLORS=gxfxcxdxbxegedabagacad ls -lahGp"
 # alias l="ls -lahGF"
 alias l="exa -laah"
@@ -56,10 +52,8 @@ alias dp="docker ps"
 alias dc="docker-compose"
 alias lzd="lazydocker"
 
-# Gradle (IZEA)
-alias graploy="./gradlew clean package push publish promote"
-alias grapush="./gradlew clean package push"
-alias grabuild="./gradlew clean package"
+# node
+alias ni="npm i"
 
 alias bs="brew services"
 
