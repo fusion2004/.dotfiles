@@ -1,5 +1,5 @@
 # oh-my-zsh
-robbyrussell/oh-my-zsh
+ohmyzsh/ohmyzsh
 
 djui/alias-tips
 

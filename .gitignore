@@ -34,3 +34,6 @@ Temporary Items
 
 # Don't commit the local gitconfig with the user's PII
 git/gitconfig.local.symlink
+
+# Ignore bundled zsh plugins
+zsh/zsh_plugins.sh
