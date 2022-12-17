@@ -19,9 +19,9 @@ bundle config --global jobs 8
 gem install solargraph
 
 echo
-echo "› Installing ruby 3.1.2"
-rbenv install --skip-existing 3.1.2
-rbenv shell 3.1.2
+echo "› Installing ruby 3.1.3"
+rbenv install --skip-existing 3.1.3
+rbenv shell 3.1.3
 gem update --system
 
 echo
@@ -30,6 +30,6 @@ gem install bundler
 install_gems
 
 echo
-echo "› Setting global ruby to 3.1.2"
+echo "› Setting global ruby to 3.1.3"
 rbenv shell --unset
-rbenv global 3.1.2
+rbenv global 3.1.3
