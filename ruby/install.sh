@@ -8,9 +8,9 @@ function install_gems() {
 eval "$(rbenv init -)"
 
 echo
-echo "› Installing ruby 2.7.5"
-rbenv install --skip-existing 2.7.5
-rbenv shell 2.7.5
+echo "› Installing ruby 2.7.8"
+rbenv install --skip-existing 2.7.8
+rbenv shell 2.7.8
 gem update --system
 
 echo
@@ -19,9 +19,9 @@ bundle config --global jobs 8
 gem install solargraph
 
 echo
-echo "› Installing ruby 3.1.2"
-rbenv install --skip-existing 3.1.2
-rbenv shell 3.1.2
+echo "› Installing ruby 3.2.2"
+rbenv install --skip-existing 3.2.2
+rbenv shell 3.2.2
 gem update --system
 
 echo
@@ -30,6 +30,6 @@ gem install bundler
 install_gems
 
 echo
-echo "› Setting global ruby to 3.1.2"
+echo "› Setting global ruby to 3.2.2"
 rbenv shell --unset
-rbenv global 3.1.2
+rbenv global 3.2.2
