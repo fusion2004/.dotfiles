@@ -94,7 +94,8 @@ brew 'taglib'
 brew 'sox'
 brew 'libopenmpt'
 brew 'game-music-emu'
-brew 'homebrew-ffmpeg/ffmpeg/ffmpeg', args: %w[with-libopenmpt with-game-music-emu]
+brew 'webp'
+brew 'homebrew-ffmpeg/ffmpeg/ffmpeg', args: %w[with-libopenmpt with-game-music-emu with-webp]
 brew 'libshout'
 
 # casks
