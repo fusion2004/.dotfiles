@@ -1,9 +1,5 @@
 #!/usr/bin/env zsh
-# Install volta, node, & ember-cli
-
-echo
-echo "› Installing volta..."
-curl https://get.volta.sh | bash
+# Install node and global tools via volta
 
 echo
 echo "› Installing node & npm..."
