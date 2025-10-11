@@ -28,6 +28,16 @@ chflags nohidden ~/Library
 # Set a really fast key repeat.
 defaults write NSGlobalDomain KeyRepeat -int 1
 
+# TODO: these trackpad settings don't work :(
+
+# Trackpad: enable tap to click
+# defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+# defaults write NSGlobalDomain com.apple.mouse.tapBehavior -bool true
+
+# Trackpad: Disable gestures I don't like
+# defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadHorizScroll -bool false
+# defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadTwoFingerDoubleTapGesture -bool false
+
 # Set the Finder prefs for showing a few different volumes on the Desktop.
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
