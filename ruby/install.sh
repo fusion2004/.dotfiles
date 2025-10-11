@@ -8,9 +8,9 @@ function install_gems() {
 eval "$(rbenv init -)"
 
 echo
-echo "› Installing ruby 3.2.3"
-rbenv install --skip-existing 3.2.3
-rbenv shell 3.2.3
+echo "› Installing ruby 3.4.6"
+rbenv install --skip-existing 3.4.6
+rbenv shell 3.4.6
 gem update --system
 
 echo
@@ -19,6 +19,6 @@ gem install bundler
 install_gems
 
 echo
-echo "› Setting global ruby to 3.2.3"
+echo "› Setting global ruby to 3.4.6"
 rbenv shell --unset
-rbenv global 3.2.3
+rbenv global 3.4.6
