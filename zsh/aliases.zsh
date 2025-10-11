@@ -3,6 +3,7 @@ alias chr="open -a \"Google Chrome\""
 alias docs="chr \"https://github.com/IZEA/engineering_docs/wiki\""
 alias qa="chr \"https://izeaeng.jira.com/secure/RapidBoard.jspa?rapidView=68\""
 
+### git ###
 # alias g="git"
 alias ga="git add ."
 alias gap="git add -p"
@@ -20,10 +21,19 @@ alias gp="git pull"
 alias gu="git push"
 alias gl="git log"
 # alias glo="git log --oneline --decorate -20"
+
+### github ###
 # alias gci="hub ci-status -v"
 alias pr="gh pr status"
 
-# alias a="atom ."
+### git town ###
+alias gto="git town"
+alias gtoa="git town append"
+alias gtob="git town branch"
+alias gtoh="git town hack"
+alias gtos="git town sync"
+alias gtoss="git town sync --stack"
+alias gtosw="git town switch"
 
 alias b="bundle"
 alias rs="rails s -b 0.0.0.0"

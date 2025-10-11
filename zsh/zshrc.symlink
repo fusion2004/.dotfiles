@@ -8,7 +8,8 @@ fi
 # shortcut to this dotfiles path is $DOTFILES
 export DOTFILES=$HOME/.dotfiles
 
-export LANG=en_US.UTF8
+# i don't know why i needed this, and now it breaks things
+# export LANG=en_US.UTF8
 export EDITOR="nvim"
 export GUIEDITOR="code"
 
@@ -80,5 +81,7 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 [[ -f "$HOME/.zsh_fusion_config" ]] && source ~/.zsh_fusion_config
 
 ulimit -n 1024
+
+export GL_RUBOCOP_AUTOCORRECT_OPT_OUT="true"
 
 [[ -f "$HOME/.glrc" ]] && source ~/.glrc
