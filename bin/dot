@@ -50,7 +50,7 @@ brew update
 
 echo
 echo "› brew upgrade"
-brew upgrade --ignore-pinned
+brew upgrade
 
 # Remove outdated versions from the cellar.
 echo
