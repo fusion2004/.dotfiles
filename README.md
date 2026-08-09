@@ -68,7 +68,10 @@ There are a few manual steps you'll need to take as well:
 
 5. Install manual software:
    1. [Focusrite Control for Scarlett 2i2 3rd Gen](https://customer.focusritegroup.com/en/support/downloads?brand=Focusrite&product_by_type=1361&download_type=software)
-   2. [Rust](https://www.rust-lang.org/tools/install)
+
+6. fnox setup:
+   1. Generate an age key: `mkdir -p ~/.config/fnox/ && age-keygen -o ~/.config/fnox/age.txt`
+   2. In 1password developer settings, enable "Integrate with 1Password CLI"
 
 ## Updating
 
