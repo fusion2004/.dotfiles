@@ -11,24 +11,25 @@ export DOTFILES=$HOME/.dotfiles
 # i don't know why i needed this, and now it breaks things
 # export LANG=en_US.UTF8
 export EDITOR="nvim"
-export GUIEDITOR="code"
+export GUIEDITOR="zed"
+export MISE_ENV=development
 
 HISTFILE=~/.zsh_history
 HISTSIZE=1000
 SAVEHIST=1000
 # setopt share_history
 
-# source antidote
-source $(brew --prefix)/opt/antidote/share/antidote/antidote.zsh
+function is_macos() {
+  [[ $OSTYPE == darwin* ]]
+}
 
-# Needed to get oh-my-zsh to load through antidote
-export ZSH=$(antidote path ohmyzsh/ohmyzsh)
+# ensure the start of the ssh-agent by the ohmyzsh plugin doesn't output
+# any messages to the console during p10k startup
+zstyle :omz:plugins:ssh-agent quiet yes
 
-# oh-my-zsh plugins
-plugins=(aws bundler colored-man-pages command-not-found dircycle direnv ember-cli extract git jira kubectl macos npm rails ruby rust terraform transfer urltools vscode web-search yarn zoxide)
-
-# initialize zsh plugins
-antidote load "${DOTFILES}/zsh/zsh_plugins.txt" "${DOTFILES}/zsh/zsh_plugins.sh"
+# load antidote
+source /opt/homebrew/opt/antidote/share/antidote/antidote.zsh
+source "${DOTFILES}/zsh/.zsh_plugins.sh"
 
 # all of our zsh files
 typeset -U config_files
@@ -48,18 +49,7 @@ done
 
 unset config_files
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
-
-export PATH="$HOME/.cargo/bin:$PATH"
-
-# heroku autocomplete setup
-HEROKU_AC_ZSH_SETUP_PATH=/Users/markoleson/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
-
-# export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
-
-source ~/.config/broot/launcher/bash/br
+source $HOME/.config/broot/launcher/bash/br
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 # [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -68,11 +58,6 @@ source ~/.config/broot/launcher/bash/br
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init --path)"
-
-export PATH="$HOME/.local/bin:$PATH"
-
-export MISE_ENV=development
-eval "$(mise activate zsh)"
 
 export FNOX_AGE_KEY_FILE=~/.config/fnox/age.txt
 eval "$(fnox activate zsh)"
@@ -83,6 +68,6 @@ eval "$(fnox activate zsh)"
 
 ulimit -n 1024
 
-export GL_RUBOCOP_AUTOCORRECT_OPT_OUT="true"
-
-[[ -f "$HOME/.glrc" ]] && source ~/.glrc
+if [[ -f "$HOME/.glrc" ]]; then
+  source $HOME/.glrc
+fi
