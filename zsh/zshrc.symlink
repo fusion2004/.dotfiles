@@ -66,7 +66,7 @@ eval "$(fnox activate zsh)"
 # - JIRA_BASE_URL: the base url/path for the relevant Jira instance (without a trailing /)
 [[ -f "$HOME/.zsh_fusion_config" ]] && source ~/.zsh_fusion_config
 
-ulimit -n 1024
+ulimit -Sn 65536
 
 if [[ -f "$HOME/.glrc" ]]; then
   source $HOME/.glrc

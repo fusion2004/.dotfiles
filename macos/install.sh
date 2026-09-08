@@ -19,3 +19,15 @@ fi
 # echo "Updating App Store apps..."
 # echo "› mas upgrade"
 # mas upgrade
+
+# PLIST_NAME="limit.maxfiles.plist"
+# PLIST_SOURCE_DIR="$DOTFILES/macos/"
+# PLIST_TARGET_DIR="/Library/LaunchDaemons"
+
+# echo "Copying maxfiles plist..."
+# sudo cp "$PLIST_SOURCE_DIR/$PLIST_NAME" "$PLIST_TARGET_DIR/$PLIST_NAME"
+# sudo chown root:wheel "$PLIST_TARGET_DIR/$PLIST_NAME"
+# sudo chmod 644 "$PLIST_TARGET_DIR/$PLIST_NAME"
+
+# echo "Loading maxfiles plist into launchd daemon..."
+# sudo launchctl load -w "$PLIST_TARGET_DIR/$PLIST_NAME" 2>/dev/null || echo "Will take effect on next reboot."
