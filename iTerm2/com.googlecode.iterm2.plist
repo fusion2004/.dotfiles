@@ -2,10 +2,32 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>AIFeatureFunctionCalling</key>
+	<true/>
+	<key>AIFeatureHostedCodeInterpeter</key>
+	<true/>
+	<key>AIFeatureHostedFileSearch</key>
+	<true/>
+	<key>AIFeatureHostedWebSearch</key>
+	<true/>
+	<key>AIFeatureStreamingResponses</key>
+	<true/>
+	<key>AITermAPI</key>
+	<integer>2</integer>
+	<key>AIVectorStore</key>
+	<integer>0</integer>
 	<key>AdjustWindowForFontSizeChange</key>
 	<true/>
+	<key>AiMaxTokens</key>
+	<integer>1050000</integer>
+	<key>AiModel</key>
+	<string>gpt-5.5</string>
+	<key>AiResponseMaxTokens</key>
+	<integer>128000</integer>
+	<key>AitermURL</key>
+	<string>https://api.openai.com/v1/responses</string>
 	<key>AllowClipboardAccess</key>
-	<false/>
+	<true/>
 	<key>AnimateDimming</key>
 	<false/>
 	<key>AutoHideTmuxClientSession</key>
@@ -3417,7 +3439,7 @@
 			<key>Window Type</key>
 			<integer>0</integer>
 			<key>Working Directory</key>
-			<string>/Users/markoleson</string>
+			<string>/Users/mark.oleson</string>
 		</dict>
 		<dict>
 			<key>ASCII Anti Aliased</key>
@@ -4309,7 +4331,7 @@
 			<key>Window Type</key>
 			<integer>2</integer>
 			<key>Working Directory</key>
-			<string>/Users/markoleson</string>
+			<string>/Users/mark.oleson</string>
 		</dict>
 		<dict>
 			<key>ASCII Anti Aliased</key>
@@ -4757,7 +4779,7 @@
 			<key>Window Type</key>
 			<integer>2</integer>
 			<key>Working Directory</key>
-			<string>/Users/markoleson</string>
+			<string>/Users/mark.oleson</string>
 		</dict>
 	</array>
 	<key>OnlyWhenMoreTabs</key>
@@ -5819,7 +5841,7 @@
 											<key>Window Type</key>
 											<integer>2</integer>
 											<key>Working Directory</key>
-											<string>/Users/markoleson</string>
+											<string>/Users/mark.oleson</string>
 										</dict>
 										<key>Columns</key>
 										<integer>187</integer>
@@ -5827,21 +5849,21 @@
 										<array/>
 										<key>Directories</key>
 										<array>
-											<string>/Users/markoleson</string>
-											<string>/Users/markoleson</string>
-											<string>/Users/markoleson</string>
-											<string>/Users/markoleson</string>
-											<string>/Users/markoleson</string>
-											<string>/Users/markoleson</string>
-											<string>/Users/markoleson</string>
-											<string>/Users/markoleson</string>
-											<string>/Users/markoleson</string>
-											<string>/Users/markoleson/guideline/app</string>
+											<string>/Users/mark.oleson</string>
+											<string>/Users/mark.oleson</string>
+											<string>/Users/mark.oleson</string>
+											<string>/Users/mark.oleson</string>
+											<string>/Users/mark.oleson</string>
+											<string>/Users/mark.oleson</string>
+											<string>/Users/mark.oleson</string>
+											<string>/Users/mark.oleson</string>
+											<string>/Users/mark.oleson</string>
+											<string>/Users/mark.oleson/dev/gdl/app</string>
 										</array>
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/markoleson</string>
+											<string>/Users/mark.oleson</string>
 										</dict>
 										<key>Hostname to Shell</key>
 										<dict/>
@@ -5886,7 +5908,7 @@
 											<string>$$</string>
 										</dict>
 										<key>Working Directory</key>
-										<string>/Users/markoleson/guideline/app</string>
+										<string>/Users/mark.oleson/dev/gdl/app</string>
 										<key>Working Directory Poller Disabled</key>
 										<false/>
 									</dict>
@@ -6838,7 +6860,7 @@
 											<key>Window Type</key>
 											<integer>2</integer>
 											<key>Working Directory</key>
-											<string>/Users/markoleson</string>
+											<string>/Users/mark.oleson</string>
 										</dict>
 										<key>Columns</key>
 										<integer>187</integer>
@@ -6846,12 +6868,12 @@
 										<array/>
 										<key>Directories</key>
 										<array>
-											<string>/Users/markoleson/guideline/app</string>
+											<string>/Users/mark.oleson/dev/gdl/app</string>
 										</array>
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/markoleson/guideline/app</string>
+											<string>/Users/mark.oleson/dev/gdl/app</string>
 										</dict>
 										<key>Hostname to Shell</key>
 										<dict/>
@@ -6896,7 +6918,7 @@
 											<string>$$</string>
 										</dict>
 										<key>Working Directory</key>
-										<string>/Users/markoleson/guideline/app</string>
+										<string>/Users/mark.oleson/dev/gdl/app</string>
 										<key>Working Directory Poller Disabled</key>
 										<false/>
 									</dict>
@@ -7848,7 +7870,7 @@
 											<key>Window Type</key>
 											<integer>2</integer>
 											<key>Working Directory</key>
-											<string>/Users/markoleson</string>
+											<string>/Users/mark.oleson</string>
 										</dict>
 										<key>Columns</key>
 										<integer>187</integer>
@@ -7856,12 +7878,12 @@
 										<array/>
 										<key>Directories</key>
 										<array>
-											<string>/Users/markoleson/guideline/app</string>
+											<string>/Users/mark.oleson/dev/gdl/app</string>
 										</array>
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/markoleson/guideline/app</string>
+											<string>/Users/mark.oleson/dev/gdl/app</string>
 										</dict>
 										<key>Hostname to Shell</key>
 										<dict/>
@@ -7906,7 +7928,7 @@
 											<string>$$</string>
 										</dict>
 										<key>Working Directory</key>
-										<string>/Users/markoleson/guideline/app</string>
+										<string>/Users/mark.oleson/dev/gdl/app</string>
 										<key>Working Directory Poller Disabled</key>
 										<false/>
 									</dict>
@@ -8841,7 +8863,7 @@
 											<key>Window Type</key>
 											<integer>2</integer>
 											<key>Working Directory</key>
-											<string>/Users/markoleson</string>
+											<string>/Users/mark.oleson</string>
 										</dict>
 										<key>Columns</key>
 										<integer>187</integer>
@@ -8849,12 +8871,12 @@
 										<array/>
 										<key>Directories</key>
 										<array>
-											<string>/Users/markoleson/guideline/app</string>
+											<string>/Users/mark.oleson/dev/gdl/app</string>
 										</array>
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/markoleson/guideline/app</string>
+											<string>/Users/mark.oleson/dev/gdl/app</string>
 										</dict>
 										<key>Hostname to Shell</key>
 										<dict/>
@@ -8892,7 +8914,7 @@
 											<string>$$</string>
 										</dict>
 										<key>Working Directory</key>
-										<string>/Users/markoleson/guideline/app</string>
+										<string>/Users/mark.oleson/dev/gdl/app</string>
 										<key>Working Directory Poller Disabled</key>
 										<false/>
 									</dict>
@@ -9927,7 +9949,7 @@
 											<key>Window Type</key>
 											<integer>2</integer>
 											<key>Working Directory</key>
-											<string>/Users/markoleson</string>
+											<string>/Users/mark.oleson</string>
 										</dict>
 										<key>Columns</key>
 										<integer>358</integer>
@@ -9935,23 +9957,23 @@
 										<array/>
 										<key>Directories</key>
 										<array>
-											<string>/Users/markoleson</string>
-											<string>/Users/markoleson</string>
-											<string>/Users/markoleson</string>
-											<string>/Users/markoleson</string>
-											<string>/Users/markoleson</string>
-											<string>/Users/markoleson</string>
-											<string>/Users/markoleson</string>
-											<string>/Users/markoleson</string>
-											<string>/Users/markoleson</string>
-											<string>/Users/markoleson/guideline/app</string>
-											<string>/Users/markoleson/guideline/app</string>
-											<string>/Users/markoleson/guideline/app</string>
+											<string>/Users/mark.oleson</string>
+											<string>/Users/mark.oleson</string>
+											<string>/Users/mark.oleson</string>
+											<string>/Users/mark.oleson</string>
+											<string>/Users/mark.oleson</string>
+											<string>/Users/mark.oleson</string>
+											<string>/Users/mark.oleson</string>
+											<string>/Users/mark.oleson</string>
+											<string>/Users/mark.oleson</string>
+											<string>/Users/mark.oleson/dev/gdl/app</string>
+											<string>/Users/mark.oleson/dev/gdl/app</string>
+											<string>/Users/mark.oleson/dev/gdl/app</string>
 										</array>
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/markoleson/guideline/app</string>
+											<string>/Users/mark.oleson/dev/gdl/app</string>
 										</dict>
 										<key>Hostname to Shell</key>
 										<dict/>
@@ -9996,7 +10018,7 @@
 											<string>$$</string>
 										</dict>
 										<key>Working Directory</key>
-										<string>/Users/markoleson/guideline/app</string>
+										<string>/Users/mark.oleson/dev/gdl/app</string>
 										<key>Working Directory Poller Disabled</key>
 										<false/>
 									</dict>
@@ -10954,7 +10976,7 @@
 											<key>Window Type</key>
 											<integer>2</integer>
 											<key>Working Directory</key>
-											<string>/Users/markoleson</string>
+											<string>/Users/mark.oleson</string>
 										</dict>
 										<key>Columns</key>
 										<integer>358</integer>
@@ -10962,14 +10984,14 @@
 										<array/>
 										<key>Directories</key>
 										<array>
-											<string>/Users/markoleson/guideline/app</string>
-											<string>/Users/markoleson/guideline/app</string>
-											<string>/Users/markoleson/guideline/app</string>
+											<string>/Users/mark.oleson/dev/gdl/app</string>
+											<string>/Users/mark.oleson/dev/gdl/app</string>
+											<string>/Users/mark.oleson/dev/gdl/app</string>
 										</array>
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/markoleson/guideline/app</string>
+											<string>/Users/mark.oleson/dev/gdl/app</string>
 										</dict>
 										<key>Hostname to Shell</key>
 										<dict/>
@@ -11014,7 +11036,7 @@
 											<string>$$</string>
 										</dict>
 										<key>Working Directory</key>
-										<string>/Users/markoleson/guideline/app</string>
+										<string>/Users/mark.oleson/dev/gdl/app</string>
 										<key>Working Directory Poller Disabled</key>
 										<false/>
 									</dict>
@@ -11972,7 +11994,7 @@
 											<key>Window Type</key>
 											<integer>2</integer>
 											<key>Working Directory</key>
-											<string>/Users/markoleson</string>
+											<string>/Users/mark.oleson</string>
 										</dict>
 										<key>Columns</key>
 										<integer>358</integer>
@@ -11980,14 +12002,14 @@
 										<array/>
 										<key>Directories</key>
 										<array>
-											<string>/Users/markoleson/guideline/app</string>
-											<string>/Users/markoleson/guideline/app</string>
-											<string>/Users/markoleson/guideline/app</string>
+											<string>/Users/mark.oleson/dev/gdl/app</string>
+											<string>/Users/mark.oleson/dev/gdl/app</string>
+											<string>/Users/mark.oleson/dev/gdl/app</string>
 										</array>
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/markoleson/guideline/app</string>
+											<string>/Users/mark.oleson/dev/gdl/app</string>
 										</dict>
 										<key>Hostname to Shell</key>
 										<dict/>
@@ -12032,7 +12054,7 @@
 											<string>$$</string>
 										</dict>
 										<key>Working Directory</key>
-										<string>/Users/markoleson/guideline/app</string>
+										<string>/Users/mark.oleson/dev/gdl/app</string>
 										<key>Working Directory Poller Disabled</key>
 										<false/>
 									</dict>
@@ -12973,7 +12995,7 @@
 											<key>Window Type</key>
 											<integer>2</integer>
 											<key>Working Directory</key>
-											<string>/Users/markoleson</string>
+											<string>/Users/mark.oleson</string>
 										</dict>
 										<key>Columns</key>
 										<integer>358</integer>
@@ -12981,14 +13003,14 @@
 										<array/>
 										<key>Directories</key>
 										<array>
-											<string>/Users/markoleson/guideline/app</string>
-											<string>/Users/markoleson/guideline/app</string>
-											<string>/Users/markoleson/guideline/app</string>
+											<string>/Users/mark.oleson/dev/gdl/app</string>
+											<string>/Users/mark.oleson/dev/gdl/app</string>
+											<string>/Users/mark.oleson/dev/gdl/app</string>
 										</array>
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/markoleson/guideline/app</string>
+											<string>/Users/mark.oleson/dev/gdl/app</string>
 										</dict>
 										<key>Hostname to Shell</key>
 										<dict/>
@@ -13026,7 +13048,7 @@
 											<string>$$</string>
 										</dict>
 										<key>Working Directory</key>
-										<string>/Users/markoleson/guideline/app</string>
+										<string>/Users/mark.oleson/dev/gdl/app</string>
 										<key>Working Directory Poller Disabled</key>
 										<false/>
 									</dict>
@@ -13984,7 +14006,7 @@
 											<key>Window Type</key>
 											<integer>2</integer>
 											<key>Working Directory</key>
-											<string>/Users/markoleson</string>
+											<string>/Users/mark.oleson</string>
 										</dict>
 										<key>Columns</key>
 										<integer>358</integer>
@@ -13992,17 +14014,17 @@
 										<array/>
 										<key>Directories</key>
 										<array>
-											<string>/Users/markoleson/guideline/app</string>
-											<string>/Users/markoleson/guideline/app</string>
-											<string>/Users/markoleson/guideline/app</string>
-											<string>/Users/markoleson/guideline/app</string>
-											<string>/Users/markoleson/guideline/gdl_js/packages/guideline-ui</string>
-											<string>/Users/markoleson/guideline/gdl_js/packages/guideline-ui</string>
+											<string>/Users/mark.oleson/dev/gdl/app</string>
+											<string>/Users/mark.oleson/dev/gdl/app</string>
+											<string>/Users/mark.oleson/dev/gdl/app</string>
+											<string>/Users/mark.oleson/dev/gdl/app</string>
+											<string>/Users/mark.oleson/dev/gdl/gdl_js/packages/guideline-ui</string>
+											<string>/Users/mark.oleson/dev/gdl/gdl_js/packages/guideline-ui</string>
 										</array>
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/markoleson/guideline/app</string>
+											<string>/Users/mark.oleson/dev/gdl/app</string>
 										</dict>
 										<key>Hostname to Shell</key>
 										<dict/>
@@ -14047,7 +14069,7 @@
 											<string>$$</string>
 										</dict>
 										<key>Working Directory</key>
-										<string>/Users/markoleson/guideline/gdl_js/packages/guideline-ui</string>
+										<string>/Users/mark.oleson/dev/gdl/gdl_js/packages/guideline-ui</string>
 										<key>Working Directory Poller Disabled</key>
 										<false/>
 									</dict>
@@ -15005,7 +15027,7 @@
 											<key>Window Type</key>
 											<integer>2</integer>
 											<key>Working Directory</key>
-											<string>/Users/markoleson</string>
+											<string>/Users/mark.oleson</string>
 										</dict>
 										<key>Columns</key>
 										<integer>358</integer>
@@ -15013,13 +15035,13 @@
 										<array/>
 										<key>Directories</key>
 										<array>
-											<string>/Users/markoleson/guideline/gdl_js/packages/guideline-ui</string>
-											<string>/Users/markoleson/guideline/gdl_js/packages/guideline-ui</string>
+											<string>/Users/mark.oleson/dev/gdl/gdl_js/packages/guideline-ui</string>
+											<string>/Users/mark.oleson/dev/gdl/gdl_js/packages/guideline-ui</string>
 										</array>
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/markoleson/guideline/gdl_js/packages/guideline-ui</string>
+											<string>/Users/mark.oleson/dev/gdl/gdl_js/packages/guideline-ui</string>
 										</dict>
 										<key>Hostname to Shell</key>
 										<dict/>
@@ -15064,7 +15086,7 @@
 											<string>$$</string>
 										</dict>
 										<key>Working Directory</key>
-										<string>/Users/markoleson/guideline/gdl_js/packages/guideline-ui</string>
+										<string>/Users/mark.oleson/dev/gdl/gdl_js/packages/guideline-ui</string>
 										<key>Working Directory Poller Disabled</key>
 										<false/>
 									</dict>
@@ -16099,7 +16121,7 @@
 											<key>Window Type</key>
 											<integer>2</integer>
 											<key>Working Directory</key>
-											<string>/Users/markoleson</string>
+											<string>/Users/mark.oleson</string>
 										</dict>
 										<key>Columns</key>
 										<integer>358</integer>
@@ -16107,14 +16129,14 @@
 										<array/>
 										<key>Directories</key>
 										<array>
-											<string>/Users/markoleson/guideline/app</string>
-											<string>/Users/markoleson/guideline/app</string>
-											<string>/Users/markoleson/guideline/app</string>
+											<string>/Users/mark.oleson/dev/gdl/app</string>
+											<string>/Users/mark.oleson/dev/gdl/app</string>
+											<string>/Users/mark.oleson/dev/gdl/app</string>
 										</array>
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/markoleson/guideline/app</string>
+											<string>/Users/mark.oleson/dev/gdl/app</string>
 										</dict>
 										<key>Hostname to Shell</key>
 										<dict/>
@@ -16159,7 +16181,7 @@
 											<string>$$</string>
 										</dict>
 										<key>Working Directory</key>
-										<string>/Users/markoleson/guideline/app</string>
+										<string>/Users/mark.oleson/dev/gdl/app</string>
 										<key>Working Directory Poller Disabled</key>
 										<false/>
 									</dict>
@@ -17117,7 +17139,7 @@
 											<key>Window Type</key>
 											<integer>2</integer>
 											<key>Working Directory</key>
-											<string>/Users/markoleson</string>
+											<string>/Users/mark.oleson</string>
 										</dict>
 										<key>Columns</key>
 										<integer>358</integer>
@@ -17125,14 +17147,14 @@
 										<array/>
 										<key>Directories</key>
 										<array>
-											<string>/Users/markoleson/guideline/app</string>
-											<string>/Users/markoleson/guideline/app</string>
-											<string>/Users/markoleson/guideline/app</string>
+											<string>/Users/mark.oleson/dev/gdl/app</string>
+											<string>/Users/mark.oleson/dev/gdl/app</string>
+											<string>/Users/mark.oleson/dev/gdl/app</string>
 										</array>
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/markoleson/guideline/app</string>
+											<string>/Users/mark.oleson/dev/gdl/app</string>
 										</dict>
 										<key>Hostname to Shell</key>
 										<dict/>
@@ -17177,7 +17199,7 @@
 											<string>$$</string>
 										</dict>
 										<key>Working Directory</key>
-										<string>/Users/markoleson/guideline/app</string>
+										<string>/Users/mark.oleson/dev/gdl/app</string>
 										<key>Working Directory Poller Disabled</key>
 										<false/>
 									</dict>
@@ -18118,7 +18140,7 @@
 											<key>Window Type</key>
 											<integer>2</integer>
 											<key>Working Directory</key>
-											<string>/Users/markoleson</string>
+											<string>/Users/mark.oleson</string>
 										</dict>
 										<key>Columns</key>
 										<integer>358</integer>
@@ -18126,14 +18148,14 @@
 										<array/>
 										<key>Directories</key>
 										<array>
-											<string>/Users/markoleson/guideline/app</string>
-											<string>/Users/markoleson/guideline/app</string>
-											<string>/Users/markoleson/guideline/app</string>
+											<string>/Users/mark.oleson/dev/gdl/app</string>
+											<string>/Users/mark.oleson/dev/gdl/app</string>
+											<string>/Users/mark.oleson/dev/gdl/app</string>
 										</array>
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/markoleson/guideline/app</string>
+											<string>/Users/mark.oleson/dev/gdl/app</string>
 										</dict>
 										<key>Hostname to Shell</key>
 										<dict/>
@@ -18171,7 +18193,7 @@
 											<string>$$</string>
 										</dict>
 										<key>Working Directory</key>
-										<string>/Users/markoleson/guideline/app</string>
+										<string>/Users/mark.oleson/dev/gdl/app</string>
 										<key>Working Directory Poller Disabled</key>
 										<false/>
 									</dict>
@@ -19046,7 +19068,7 @@
 											<key>Window Type</key>
 											<integer>2</integer>
 											<key>Working Directory</key>
-											<string>/Users/markoleson</string>
+											<string>/Users/mark.oleson</string>
 										</dict>
 										<key>Columns</key>
 										<integer>238</integer>
@@ -19057,7 +19079,7 @@
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/markoleson</string>
+											<string>/Users/mark.oleson</string>
 										</dict>
 										<key>Hostname to Shell</key>
 										<dict/>
@@ -19090,7 +19112,7 @@
 										<key>Substitutions</key>
 										<dict/>
 										<key>Working Directory</key>
-										<string>/Users/markoleson/Developer/imaging-u-api</string>
+										<string>/Users/mark.oleson/Developer/imaging-u-api</string>
 										<key>Working Directory Poller Disabled</key>
 										<false/>
 									</dict>
@@ -19888,7 +19910,7 @@
 											<key>Window Type</key>
 											<integer>2</integer>
 											<key>Working Directory</key>
-											<string>/Users/markoleson</string>
+											<string>/Users/mark.oleson</string>
 										</dict>
 										<key>Columns</key>
 										<integer>238</integer>
@@ -19899,7 +19921,7 @@
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/markoleson/Developer/imaging-u-api</string>
+											<string>/Users/mark.oleson/Developer/imaging-u-api</string>
 										</dict>
 										<key>Hostname to Shell</key>
 										<dict/>
@@ -19932,7 +19954,7 @@
 										<key>Substitutions</key>
 										<dict/>
 										<key>Working Directory</key>
-										<string>/Users/markoleson/Developer/imaging-u-api</string>
+										<string>/Users/mark.oleson/Developer/imaging-u-api</string>
 										<key>Working Directory Poller Disabled</key>
 										<false/>
 									</dict>
@@ -20730,7 +20752,7 @@
 											<key>Window Type</key>
 											<integer>2</integer>
 											<key>Working Directory</key>
-											<string>/Users/markoleson</string>
+											<string>/Users/mark.oleson</string>
 										</dict>
 										<key>Columns</key>
 										<integer>238</integer>
@@ -20741,7 +20763,7 @@
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/markoleson/Developer/imaging-u-api</string>
+											<string>/Users/mark.oleson/Developer/imaging-u-api</string>
 										</dict>
 										<key>Hostname to Shell</key>
 										<dict/>
@@ -20774,7 +20796,7 @@
 										<key>Substitutions</key>
 										<dict/>
 										<key>Working Directory</key>
-										<string>/Users/markoleson/Developer/imaging-u-web-client</string>
+										<string>/Users/mark.oleson/Developer/imaging-u-web-client</string>
 										<key>Working Directory Poller Disabled</key>
 										<false/>
 									</dict>
@@ -21572,7 +21594,7 @@
 											<key>Window Type</key>
 											<integer>2</integer>
 											<key>Working Directory</key>
-											<string>/Users/markoleson</string>
+											<string>/Users/mark.oleson</string>
 										</dict>
 										<key>Columns</key>
 										<integer>238</integer>
@@ -21583,7 +21605,7 @@
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/markoleson/Developer/imaging-u-web-client</string>
+											<string>/Users/mark.oleson/Developer/imaging-u-web-client</string>
 										</dict>
 										<key>Hostname to Shell</key>
 										<dict/>
@@ -21616,7 +21638,7 @@
 										<key>Substitutions</key>
 										<dict/>
 										<key>Working Directory</key>
-										<string>/Users/markoleson/Developer/imaging-u-web-client</string>
+										<string>/Users/mark.oleson/Developer/imaging-u-web-client</string>
 										<key>Working Directory Poller Disabled</key>
 										<false/>
 									</dict>
@@ -22633,7 +22655,7 @@
 											<key>Window Type</key>
 											<integer>2</integer>
 											<key>Working Directory</key>
-											<string>/Users/markoleson</string>
+											<string>/Users/mark.oleson</string>
 											<key>tmux Pane Title</key>
 											<string>Visor</string>
 										</dict>
@@ -22643,14 +22665,14 @@
 										<array/>
 										<key>Directories</key>
 										<array>
-											<string>/Users/markoleson/Developer/amethyst-marketer-web</string>
-											<string>/Users/markoleson/Developer/amethyst-marketer-web</string>
-											<string>/Users/markoleson/Developer/izea-exchange</string>
+											<string>/Users/mark.oleson/Developer/amethyst-marketer-web</string>
+											<string>/Users/mark.oleson/Developer/amethyst-marketer-web</string>
+											<string>/Users/mark.oleson/Developer/izea-exchange</string>
 										</array>
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/markoleson/Developer/amethyst-marketer-web</string>
+											<string>/Users/mark.oleson/Developer/amethyst-marketer-web</string>
 										</dict>
 										<key>Hostname to Shell</key>
 										<dict/>
@@ -22683,7 +22705,7 @@
 										<key>Substitutions</key>
 										<dict/>
 										<key>Working Directory</key>
-										<string>/Users/markoleson/Developer/izea-exchange</string>
+										<string>/Users/mark.oleson/Developer/izea-exchange</string>
 										<key>Working Directory Poller Disabled</key>
 										<false/>
 									</dict>
@@ -23631,7 +23653,7 @@
 											<key>Window Type</key>
 											<integer>2</integer>
 											<key>Working Directory</key>
-											<string>/Users/markoleson</string>
+											<string>/Users/mark.oleson</string>
 										</dict>
 										<key>Columns</key>
 										<integer>208</integer>
@@ -23639,12 +23661,12 @@
 										<array/>
 										<key>Directories</key>
 										<array>
-											<string>/Users/markoleson/Developer/izea-exchange</string>
+											<string>/Users/mark.oleson/Developer/izea-exchange</string>
 										</array>
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/markoleson/Developer/izea-exchange</string>
+											<string>/Users/mark.oleson/Developer/izea-exchange</string>
 										</dict>
 										<key>Hostname to Shell</key>
 										<dict/>
@@ -23677,7 +23699,7 @@
 										<key>Substitutions</key>
 										<dict/>
 										<key>Working Directory</key>
-										<string>/Users/markoleson/Developer/izea-exchange</string>
+										<string>/Users/mark.oleson/Developer/izea-exchange</string>
 										<key>Working Directory Poller Disabled</key>
 										<false/>
 									</dict>
@@ -24608,7 +24630,7 @@
 											<key>Window Type</key>
 											<integer>2</integer>
 											<key>Working Directory</key>
-											<string>/Users/markoleson</string>
+											<string>/Users/mark.oleson</string>
 										</dict>
 										<key>Columns</key>
 										<integer>208</integer>
@@ -24616,14 +24638,14 @@
 										<array/>
 										<key>Directories</key>
 										<array>
-											<string>/Users/markoleson/Developer/izea-exchange</string>
-											<string>/Users/markoleson/Developer/izea-exchange</string>
-											<string>/Users/markoleson/Developer/obsidian-api</string>
+											<string>/Users/mark.oleson/Developer/izea-exchange</string>
+											<string>/Users/mark.oleson/Developer/izea-exchange</string>
+											<string>/Users/mark.oleson/Developer/obsidian-api</string>
 										</array>
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/markoleson/Developer/izea-exchange</string>
+											<string>/Users/mark.oleson/Developer/izea-exchange</string>
 										</dict>
 										<key>Hostname to Shell</key>
 										<dict/>
@@ -24656,7 +24678,7 @@
 										<key>Substitutions</key>
 										<dict/>
 										<key>Working Directory</key>
-										<string>/Users/markoleson/Developer/obsidian-api</string>
+										<string>/Users/mark.oleson/Developer/obsidian-api</string>
 										<key>Working Directory Poller Disabled</key>
 										<false/>
 									</dict>
@@ -25587,7 +25609,7 @@
 											<key>Window Type</key>
 											<integer>2</integer>
 											<key>Working Directory</key>
-											<string>/Users/markoleson</string>
+											<string>/Users/mark.oleson</string>
 										</dict>
 										<key>Columns</key>
 										<integer>208</integer>
@@ -25595,12 +25617,12 @@
 										<array/>
 										<key>Directories</key>
 										<array>
-											<string>/Users/markoleson/Developer/obsidian-api</string>
+											<string>/Users/mark.oleson/Developer/obsidian-api</string>
 										</array>
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/markoleson/Developer/obsidian-api</string>
+											<string>/Users/mark.oleson/Developer/obsidian-api</string>
 										</dict>
 										<key>Hostname to Shell</key>
 										<dict/>
@@ -25633,7 +25655,7 @@
 										<key>Substitutions</key>
 										<dict/>
 										<key>Working Directory</key>
-										<string>/Users/markoleson/Developer/obsidian-api</string>
+										<string>/Users/mark.oleson/Developer/obsidian-api</string>
 										<key>Working Directory Poller Disabled</key>
 										<false/>
 									</dict>
@@ -26581,7 +26603,7 @@
 											<key>Window Type</key>
 											<integer>2</integer>
 											<key>Working Directory</key>
-											<string>/Users/markoleson</string>
+											<string>/Users/mark.oleson</string>
 										</dict>
 										<key>Columns</key>
 										<integer>208</integer>
@@ -26589,14 +26611,14 @@
 										<array/>
 										<key>Directories</key>
 										<array>
-											<string>/Users/markoleson/Developer/obsidian-api</string>
-											<string>/Users/markoleson/Developer/obsidian-api</string>
-											<string>/Users/markoleson/Developer/sapphire-workflow-service</string>
+											<string>/Users/mark.oleson/Developer/obsidian-api</string>
+											<string>/Users/mark.oleson/Developer/obsidian-api</string>
+											<string>/Users/mark.oleson/Developer/sapphire-workflow-service</string>
 										</array>
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/markoleson/Developer/obsidian-api</string>
+											<string>/Users/mark.oleson/Developer/obsidian-api</string>
 										</dict>
 										<key>Hostname to Shell</key>
 										<dict/>
@@ -26629,7 +26651,7 @@
 										<key>Substitutions</key>
 										<dict/>
 										<key>Working Directory</key>
-										<string>/Users/markoleson/Developer/sapphire-workflow-service</string>
+										<string>/Users/mark.oleson/Developer/sapphire-workflow-service</string>
 										<key>Working Directory Poller Disabled</key>
 										<false/>
 									</dict>
@@ -27577,7 +27599,7 @@
 											<key>Window Type</key>
 											<integer>2</integer>
 											<key>Working Directory</key>
-											<string>/Users/markoleson</string>
+											<string>/Users/mark.oleson</string>
 										</dict>
 										<key>Columns</key>
 										<integer>208</integer>
@@ -27585,12 +27607,12 @@
 										<array/>
 										<key>Directories</key>
 										<array>
-											<string>/Users/markoleson/Developer/sapphire-workflow-service</string>
+											<string>/Users/mark.oleson/Developer/sapphire-workflow-service</string>
 										</array>
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/markoleson/Developer/sapphire-workflow-service</string>
+											<string>/Users/mark.oleson/Developer/sapphire-workflow-service</string>
 										</dict>
 										<key>Hostname to Shell</key>
 										<dict/>
@@ -27623,7 +27645,7 @@
 										<key>Substitutions</key>
 										<dict/>
 										<key>Working Directory</key>
-										<string>/Users/markoleson/Developer/sapphire-workflow-service</string>
+										<string>/Users/mark.oleson/Developer/sapphire-workflow-service</string>
 										<key>Working Directory Poller Disabled</key>
 										<false/>
 									</dict>
@@ -28571,7 +28593,7 @@
 											<key>Window Type</key>
 											<integer>2</integer>
 											<key>Working Directory</key>
-											<string>/Users/markoleson</string>
+											<string>/Users/mark.oleson</string>
 										</dict>
 										<key>Columns</key>
 										<integer>208</integer>
@@ -28579,14 +28601,14 @@
 										<array/>
 										<key>Directories</key>
 										<array>
-											<string>/Users/markoleson/Developer/sapphire-workflow-service</string>
-											<string>/Users/markoleson/Developer/sapphire-workflow-service</string>
-											<string>/Users/markoleson/Developer/amethyst-marketer-web</string>
+											<string>/Users/mark.oleson/Developer/sapphire-workflow-service</string>
+											<string>/Users/mark.oleson/Developer/sapphire-workflow-service</string>
+											<string>/Users/mark.oleson/Developer/amethyst-marketer-web</string>
 										</array>
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/markoleson/Developer/sapphire-workflow-service</string>
+											<string>/Users/mark.oleson/Developer/sapphire-workflow-service</string>
 										</dict>
 										<key>Hostname to Shell</key>
 										<dict/>
@@ -28619,7 +28641,7 @@
 										<key>Substitutions</key>
 										<dict/>
 										<key>Working Directory</key>
-										<string>/Users/markoleson/Developer/amethyst-marketer-web</string>
+										<string>/Users/mark.oleson/Developer/amethyst-marketer-web</string>
 										<key>Working Directory Poller Disabled</key>
 										<false/>
 									</dict>
@@ -29567,7 +29589,7 @@
 											<key>Window Type</key>
 											<integer>2</integer>
 											<key>Working Directory</key>
-											<string>/Users/markoleson</string>
+											<string>/Users/mark.oleson</string>
 										</dict>
 										<key>Columns</key>
 										<integer>208</integer>
@@ -29575,12 +29597,12 @@
 										<array/>
 										<key>Directories</key>
 										<array>
-											<string>/Users/markoleson/Developer/amethyst-marketer-web</string>
+											<string>/Users/mark.oleson/Developer/amethyst-marketer-web</string>
 										</array>
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/markoleson/Developer/amethyst-marketer-web</string>
+											<string>/Users/mark.oleson/Developer/amethyst-marketer-web</string>
 										</dict>
 										<key>Hostname to Shell</key>
 										<dict/>
@@ -29613,7 +29635,7 @@
 										<key>Substitutions</key>
 										<dict/>
 										<key>Working Directory</key>
-										<string>/Users/markoleson/Developer/amethyst-marketer-web</string>
+										<string>/Users/mark.oleson/Developer/amethyst-marketer-web</string>
 										<key>Working Directory Poller Disabled</key>
 										<false/>
 									</dict>
@@ -30561,7 +30583,7 @@
 											<key>Window Type</key>
 											<integer>2</integer>
 											<key>Working Directory</key>
-											<string>/Users/markoleson</string>
+											<string>/Users/mark.oleson</string>
 										</dict>
 										<key>Columns</key>
 										<integer>208</integer>
@@ -30569,14 +30591,14 @@
 										<array/>
 										<key>Directories</key>
 										<array>
-											<string>/Users/markoleson/Developer/amethyst-marketer-web</string>
-											<string>/Users/markoleson/Developer/amethyst-marketer-web</string>
-											<string>/Users/markoleson/Developer/emerald-creator-web</string>
+											<string>/Users/mark.oleson/Developer/amethyst-marketer-web</string>
+											<string>/Users/mark.oleson/Developer/amethyst-marketer-web</string>
+											<string>/Users/mark.oleson/Developer/emerald-creator-web</string>
 										</array>
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/markoleson/Developer/amethyst-marketer-web</string>
+											<string>/Users/mark.oleson/Developer/amethyst-marketer-web</string>
 										</dict>
 										<key>Hostname to Shell</key>
 										<dict/>
@@ -30609,7 +30631,7 @@
 										<key>Substitutions</key>
 										<dict/>
 										<key>Working Directory</key>
-										<string>/Users/markoleson/Developer/emerald-creator-web</string>
+										<string>/Users/mark.oleson/Developer/emerald-creator-web</string>
 										<key>Working Directory Poller Disabled</key>
 										<false/>
 									</dict>
@@ -31557,7 +31579,7 @@
 											<key>Window Type</key>
 											<integer>2</integer>
 											<key>Working Directory</key>
-											<string>/Users/markoleson</string>
+											<string>/Users/mark.oleson</string>
 										</dict>
 										<key>Columns</key>
 										<integer>208</integer>
@@ -31565,12 +31587,12 @@
 										<array/>
 										<key>Directories</key>
 										<array>
-											<string>/Users/markoleson/Developer/emerald-creator-web</string>
+											<string>/Users/mark.oleson/Developer/emerald-creator-web</string>
 										</array>
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/markoleson/Developer/emerald-creator-web</string>
+											<string>/Users/mark.oleson/Developer/emerald-creator-web</string>
 										</dict>
 										<key>Hostname to Shell</key>
 										<dict/>
@@ -31603,7 +31625,7 @@
 										<key>Substitutions</key>
 										<dict/>
 										<key>Working Directory</key>
-										<string>/Users/markoleson/Developer/emerald-creator-web</string>
+										<string>/Users/mark.oleson/Developer/emerald-creator-web</string>
 										<key>Working Directory Poller Disabled</key>
 										<false/>
 									</dict>
@@ -32603,7 +32625,7 @@
 											<key>Window Type</key>
 											<integer>2</integer>
 											<key>Working Directory</key>
-											<string>/Users/markoleson</string>
+											<string>/Users/mark.oleson</string>
 										</dict>
 										<key>Columns</key>
 										<integer>208</integer>
@@ -32611,14 +32633,14 @@
 										<array/>
 										<key>Directories</key>
 										<array>
-											<string>/Users/markoleson/Developer/izea-exchange</string>
-											<string>/Users/markoleson/Developer/izea-exchange</string>
-											<string>/Users/markoleson/Developer/scanlab-api</string>
+											<string>/Users/mark.oleson/Developer/izea-exchange</string>
+											<string>/Users/mark.oleson/Developer/izea-exchange</string>
+											<string>/Users/mark.oleson/Developer/scanlab-api</string>
 										</array>
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/markoleson/Developer/izea-exchange</string>
+											<string>/Users/mark.oleson/Developer/izea-exchange</string>
 										</dict>
 										<key>Hostname to Shell</key>
 										<dict/>
@@ -32651,7 +32673,7 @@
 										<key>Substitutions</key>
 										<dict/>
 										<key>Working Directory</key>
-										<string>/Users/markoleson/Developer/scanlab-api</string>
+										<string>/Users/mark.oleson/Developer/scanlab-api</string>
 										<key>Working Directory Poller Disabled</key>
 										<false/>
 									</dict>
@@ -33582,7 +33604,7 @@
 											<key>Window Type</key>
 											<integer>2</integer>
 											<key>Working Directory</key>
-											<string>/Users/markoleson</string>
+											<string>/Users/mark.oleson</string>
 										</dict>
 										<key>Columns</key>
 										<integer>208</integer>
@@ -33590,12 +33612,12 @@
 										<array/>
 										<key>Directories</key>
 										<array>
-											<string>/Users/markoleson/Developer/scanlab-api</string>
+											<string>/Users/mark.oleson/Developer/scanlab-api</string>
 										</array>
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/markoleson/Developer/scanlab-api</string>
+											<string>/Users/mark.oleson/Developer/scanlab-api</string>
 										</dict>
 										<key>Hostname to Shell</key>
 										<dict/>
@@ -33628,7 +33650,7 @@
 										<key>Substitutions</key>
 										<dict/>
 										<key>Working Directory</key>
-										<string>/Users/markoleson/Developer/scanlab-api</string>
+										<string>/Users/mark.oleson/Developer/scanlab-api</string>
 										<key>Working Directory Poller Disabled</key>
 										<false/>
 									</dict>
@@ -34559,7 +34581,7 @@
 											<key>Window Type</key>
 											<integer>2</integer>
 											<key>Working Directory</key>
-											<string>/Users/markoleson</string>
+											<string>/Users/mark.oleson</string>
 										</dict>
 										<key>Columns</key>
 										<integer>208</integer>
@@ -34567,14 +34589,14 @@
 										<array/>
 										<key>Directories</key>
 										<array>
-											<string>/Users/markoleson/Developer/scanlab-api</string>
-											<string>/Users/markoleson/Developer/scanlab-api</string>
-											<string>/Users/markoleson/Developer/scanlab-web</string>
+											<string>/Users/mark.oleson/Developer/scanlab-api</string>
+											<string>/Users/mark.oleson/Developer/scanlab-api</string>
+											<string>/Users/mark.oleson/Developer/scanlab-web</string>
 										</array>
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/markoleson/Developer/scanlab-api</string>
+											<string>/Users/mark.oleson/Developer/scanlab-api</string>
 										</dict>
 										<key>Hostname to Shell</key>
 										<dict/>
@@ -34607,7 +34629,7 @@
 										<key>Substitutions</key>
 										<dict/>
 										<key>Working Directory</key>
-										<string>/Users/markoleson/Developer/scanlab-web</string>
+										<string>/Users/mark.oleson/Developer/scanlab-web</string>
 										<key>Working Directory Poller Disabled</key>
 										<false/>
 									</dict>
@@ -35538,7 +35560,7 @@
 											<key>Window Type</key>
 											<integer>2</integer>
 											<key>Working Directory</key>
-											<string>/Users/markoleson</string>
+											<string>/Users/mark.oleson</string>
 										</dict>
 										<key>Columns</key>
 										<integer>208</integer>
@@ -35546,12 +35568,12 @@
 										<array/>
 										<key>Directories</key>
 										<array>
-											<string>/Users/markoleson/Developer/scanlab-web</string>
+											<string>/Users/mark.oleson/Developer/scanlab-web</string>
 										</array>
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/markoleson/Developer/scanlab-web</string>
+											<string>/Users/mark.oleson/Developer/scanlab-web</string>
 										</dict>
 										<key>Hostname to Shell</key>
 										<dict/>
@@ -35584,7 +35606,7 @@
 										<key>Substitutions</key>
 										<dict/>
 										<key>Working Directory</key>
-										<string>/Users/markoleson/Developer/scanlab-web</string>
+										<string>/Users/mark.oleson/Developer/scanlab-web</string>
 										<key>Working Directory Poller Disabled</key>
 										<false/>
 									</dict>
