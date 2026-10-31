@@ -5,9 +5,7 @@ tap 'github/gh', trusted: true
 tap 'heroku/brew', trusted: true
 tap 'bbc/audiowaveform', trusted: true
 tap 'hashicorp/tap', trusted: true
-tap 'homebrew-ffmpeg/ffmpeg', trusted: true
 tap 'jesseduffield/lazydocker', trusted: true
-tap 'jesseduffield/lazygit', trusted: true
 
 # general tools
 brew 'age'
@@ -22,7 +20,6 @@ brew 'cabal-install'
 brew 'caddy'
 brew 'curl'
 brew 'diff-so-fancy'
-brew 'docker-slim'
 brew 'duf'
 brew 'elixir'
 brew 'eza'
@@ -43,17 +40,17 @@ brew 'haskell-stack'
 brew 'helm'
 # brew 'heroku'
 brew 'hugo'
-brew 'httpie'
 brew 'jless'
 brew 'jq'
 brew 'kubectl'
 brew 'jesseduffield/lazydocker/lazydocker'
-brew 'jesseduffield/lazygit/lazygit'
+brew 'lazygit'
 brew 'less'
 brew 'lolcat'
 brew 'magic-wormhole'
 brew 'mailpit'
 brew 'mas'
+brew 'mintoolkit'
 brew 'mise'
 brew 'mosh'
 brew 'neofetch'
@@ -82,6 +79,7 @@ brew 'tokei'
 brew 'trash'
 brew 'vim'
 brew 'wget'
+brew 'xh'
 brew 'yt-dlp'
 brew 'zoxide'
 brew 'zsh'
@@ -91,10 +89,6 @@ brew 'zsh-completions'
 brew 'audiowaveform' if File.exist?("/usr/bin/clang++") # install via apt on linux
 brew 'taglib'
 brew 'sox'
-brew 'libopenmpt'
-brew 'game-music-emu'
-brew 'webp'
-brew 'homebrew-ffmpeg/ffmpeg/ffmpeg', args: %w[with-libopenmpt with-game-music-emu with-webp with-fdk-aac with-srt]
 brew 'libshout'
 
 # casks
