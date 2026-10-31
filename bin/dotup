@@ -38,7 +38,7 @@ while test $# -gt 0; do
 done
 
 # Install xcode command line tools
-$DOTFILES/macos/xcode.sh
+# $DOTFILES/macos/xcode.sh
 
 # Install homebrew
 $DOTFILES/homebrew/install.sh
