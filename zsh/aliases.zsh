@@ -66,3 +66,5 @@ alias lzd="lazydocker"
 alias ni="npm i"
 
 alias bs="brew services"
+
+alias http=xh
